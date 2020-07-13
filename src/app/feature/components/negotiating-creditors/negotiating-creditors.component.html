@@ -1,0 +1,49 @@
+<app-main-header [title]="'negotiating-creditors.title'"></app-main-header>
+
+<div class="negotiating-creditors-container flex-row-center-initial-section">
+  <div class="negotiating-creditors">
+    <p>{{'negotiating-creditors.text1' | translate}}</p>
+    <p class="link-block">{{'negotiating-creditors.text2' | translate}}
+      <a href="http://www.consumerfinance.gov/blog/debtcollection" target="_blank">
+        {{'negotiating-creditors.link1' | translate}}
+      </a>
+    </p>
+
+    <p>{{'negotiating-creditors.text3' | translate}}</p>
+    <p>{{'negotiating-creditors.text4' | translate}}</p>
+    <p>{{'negotiating-creditors.text5' | translate}}</p>
+
+    <ul>
+      <li *ngFor="let item of documentationInfo">
+        {{item.text | translate}}
+      </li>
+    </ul>
+
+    <p [innerHTML]="'negotiating-creditors.text6' | translate"></p>
+    <p>{{'negotiating-creditors.text7' | translate}}</p>
+    <p>{{'negotiating-creditors.text8' | translate}}</p>
+    <p>{{'negotiating-creditors.text9' | translate}}</p>
+
+    <ul>
+      <li *ngFor="let item of negotiatingInfo">
+        {{item.text | translate}}
+      </li>
+    </ul>
+
+    <p>{{'negotiating-creditors.text10' | translate}}</p>
+    <p>{{'negotiating-creditors.text11' | translate}}</p>
+    <p>{{'negotiating-creditors.text12' | translate}}</p>
+    <p>{{'negotiating-creditors.text13' | translate}}</p>
+    <p>{{'negotiating-creditors.text14' | translate}}</p>
+    <p>{{'negotiating-creditors.text15' | translate}}</p>
+
+
+    <ul>
+      <li *ngFor="let item of planInfo">
+        {{item.text | translate}}
+      </li>
+    </ul>
+
+    <p [innerHTML]="'negotiating-creditors.text16' | translate"></p>
+  </div>
+</div>

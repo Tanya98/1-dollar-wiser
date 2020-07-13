@@ -1,0 +1,31 @@
+.budget-credit-glossary-container {
+  margin-bottom: 10px;
+  margin-top: 80px;
+  .budget-credit-glossary {
+    width: 1110px;
+    font-size: 17px;
+
+    .text {
+      margin: 0 0 10px;
+      //   font-weight: 400;
+    }
+  }
+}
+
+.subtitle {
+  text-align: center;
+}
+
+.letter {
+  color: #0a9200;
+  font-weight: 600;
+}
+
+a {
+  @extend .letter;
+  text-decoration: none;
+}
+
+.margin-left {
+    margin-left: 5px;
+}

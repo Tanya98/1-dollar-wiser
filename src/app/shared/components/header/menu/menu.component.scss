@@ -1,0 +1,71 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  .text {
+    padding: 16px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+    font-size: 17px;
+    border: 0;
+    &:hover {
+      color: #389e38;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+  }
+}
+
+.drop-down-menu {
+  display: none;
+  position: absolute;
+  z-index: 9999999999999999;
+  top: 25px;
+  left: 15px;
+  margin-top: 10px;
+  width: 245px;
+  height: 70px;
+  background-color: white;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4),
+    inset 0 0 2px rgba(255, 255, 255, 0.75);
+  border-radius: 2px;
+  li {
+    list-style: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 7px 15px;
+    transition: all 0.4s;
+    border: 0;
+    &:hover {
+      background-color: #389e38;
+      cursor: pointer;
+      color: white;
+      border: 0;
+    }
+  }
+}
+
+::ng-deep {
+  .mat-menu-panel {
+    max-width: 340px !important;
+  }
+}
+
+button {
+  background-color: white;
+  padding: 10px 12px;
+  font-size: 13px;
+  width: 100%;
+  border: 0;
+  text-align: left;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    background-color: #389e38;
+    cursor: pointer;
+    color: white;
+    border: 0;
+  }
+}

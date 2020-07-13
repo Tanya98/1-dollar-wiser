@@ -1,0 +1,58 @@
+<app-main-header [title]="'debtor-education-disclosure.title'"></app-main-header>
+
+<div class="debtor-education-disclosure-container flex-row-center-initial-section">
+  <div class="debtor-education-disclosure">
+    <p class="subtitle">{{'debtor-education-disclosure.subtitle' | translate}}</p>
+    <p class="subtitle">{{'debtor-education-disclosure.subtitle1' | translate}}</p>
+    <p class="subtitle">{{'debtor-education-disclosure.subtitle2' | translate}}</p>
+    <p class="subtitle text">{{'debtor-education-disclosure.subtitle3' | translate}}</p>
+    <p class="text">{{'debtor-education-disclosure.text1' | translate}}</p>
+    <p class="text">{{'debtor-education-disclosure.text2' | translate}}</p>
+    <p class="title">{{'debtor-education-disclosure.fees' | translate}}</p>
+    <p class="text">{{'debtor-education-disclosure.text3' | translate}}</p>
+    <p class="text">{{'debtor-education-disclosure.text4' | translate}}</p>
+    <p class="text">{{'debtor-education-disclosure.text5' | translate}}</p>
+    <p class="title">{{'debtor-education-disclosure.ability-to-pay' | translate}}</p>
+    <p class="text">{{'debtor-education-disclosure.text6' | translate}}</p>
+    <p class="text">{{'debtor-education-disclosure.text7' | translate}}</p>
+    <p class="text">{{'debtor-education-disclosure.text8' | translate}}</p>
+    <p class="text">{{'debtor-education-disclosure.text9' | translate}}</p>
+    <p class="text">{{'debtor-education-disclosure.text10' | translate}}</p>
+
+    <ul *ngFor="let item of requiredInfo">
+      <li>{{item.text | translate}}</li>
+    </ul>
+
+    <p class="text">{{'debtor-education-disclosure.text11' | translate}}</p>
+    <p class="text">{{'debtor-education-disclosure.text12' | translate}}</p>
+    <p class="text">{{'debtor-education-disclosure.text13' | translate}}</p>
+    <p class="text">{{'debtor-education-disclosure.text14' | translate}}</p>
+
+    <ul *ngFor="let item of considerationInfo">
+      <li>{{item.text | translate}}</li>
+    </ul>
+
+    <p class="text">{{'debtor-education-disclosure.text15' | translate}}</p>
+    <p class="title">{{'debtor-education-disclosure.bilingual-instruction' | translate}}</p>
+    <p class="text">{{'debtor-education-disclosure.text16' | translate}}</p>
+    <p class="text">{{'debtor-education-disclosure.text17' | translate}}</p>
+    <p class="title">{{'debtor-education-disclosure.instructor-qualifications' | translate}}</p>
+    <p class="text">{{'debtor-education-disclosure.text18' | translate}}</p>
+    <p class="title">{{'debtor-education-disclosure.consideration-referrals' | translate}}</p>
+    <p class="text">{{'debtor-education-disclosure.text19' | translate}}</p>
+    <p class="title">{{'debtor-education-disclosure.certificate-completion' | translate}}</p>
+    <p class="text">{{'debtor-education-disclosure.text20' | translate}}</p>
+    <p class="title">{{'debtor-education-disclosure.disclosure-client-information' | translate}}</p>
+    <p class="text">{{'debtor-education-disclosure.text21' | translate}}</p>
+    <p class="title">{{'debtor-education-disclosure.annual-review' | translate}}</p>
+    <p class="text">{{'debtor-education-disclosure.text22' | translate}}</p>
+    <p class="title">{{'debtor-education-disclosure.course-certificate' | translate}}</p>
+    <p class="text">{{'debtor-education-disclosure.text23' | translate}}</p>
+    <p class="text">{{'debtor-education-disclosure.text24' | translate}}</p>
+
+    <div class="buttons-block">
+      <button class="accept">{{'debtor-education-disclosure.accept' | translate}}</button>
+      <button class="decline">{{'debtor-education-disclosure.decline' | translate}}</button>
+    </div>
+  </div>
+</div>

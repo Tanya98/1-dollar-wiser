@@ -1,0 +1,65 @@
+.text-section {
+  .info-block {
+    width: 1200px;
+    margin-top: 40px;
+  }
+}
+
+h2 {
+  color: #008000;
+  font-size: 24px;
+  text-align: center;
+  line-height: 2.5;
+}
+.donate-btn {
+  width: 150px;
+  height: 50px;
+  background-color: #ffc107;
+  color: black;
+  font-weight: 700;
+  font-size: 26px;
+  border: 0;
+  border-radius: 25px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.payment-section {
+  margin: 20px 0px;
+}
+
+img {
+  width: 200px;
+}
+
+.title-disaster {
+  color: #ff0000;
+  font-style: italic;
+}
+
+.text {
+  font-size: 24px;
+  color: #008000;
+  text-align: center;
+  font-weight: 700;
+}
+
+.wiser-education-text {
+  color: #3c3c3c;
+  font-size: 17px;
+  font-family: "Lato", sans-serif;
+}
+
+.last-updated-text {
+  margin-bottom: 45px;
+}
+
+.second-card {
+  margin-left: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

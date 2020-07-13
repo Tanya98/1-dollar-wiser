@@ -1,0 +1,89 @@
+<app-main-header [title]="'budget-credit-counseling-faqs.title'"></app-main-header>
+
+<div class="budget-credit-counseling-faqs-container flex-row-center-initial-section">
+  <div class="budget-credit-counseling-faqs">
+    <p class="subtitle">{{'budget-credit-counseling-faqs.credit-counseling' | translate}}</p>
+    <p class="subtitle">{{'budget-credit-counseling-faqs.letterA' | translate}}
+      <span class="text">{{'budget-credit-counseling-faqs.text1' | translate}}</span>
+    </p>
+    <p class="subtitle">{{'budget-credit-counseling-faqs.what-happens' | translate}}</p>
+    <p class="subtitle">{{'budget-credit-counseling-faqs.letterA' | translate}}
+      <span class="text">{{'budget-credit-counseling-faqs.text2' | translate}}</span>
+    </p>
+    <p class="subtitle">{{'budget-credit-counseling-faqs.may-credit-counselor' | translate}}</p>
+    <p class="subtitle">{{'budget-credit-counseling-faqs.letterA' | translate}}
+      <span class="text">{{'budget-credit-counseling-faqs.text3' | translate}}</span>
+    </p>
+    <p class="subtitle">{{'budget-credit-counseling-faqs.wiser-consumer-education' | translate}}</p>
+    <p class="subtitle">{{'budget-credit-counseling-faqs.letterA' | translate}}
+      <span class="text">{{'budget-credit-counseling-faqs.text4' | translate}}</span>
+    </p>
+    <p class="subtitle">{{'budget-credit-counseling-faqs.when-can-take' | translate}}</p>
+    <p class="subtitle">{{'budget-credit-counseling-faqs.letterA' | translate}}
+      <span class="text">{{'budget-credit-counseling-faqs.text5' | translate}}</span>
+    </p>
+    <p class="text">{{'budget-credit-counseling-faqs.text6' | translate}}</p>
+    <p class="subtitle">{{'budget-credit-counseling-faqs.what-info' | translate}}</p>
+    <p class="subtitle">{{'budget-credit-counseling-faqs.letterA' | translate}}
+      <span class="text">{{'budget-credit-counseling-faqs.text7' | translate}}</span>
+    </p>
+    
+    <ul *ngFor="let item of summaryInfo">
+      <li>{{item.text | translate}}</li>
+    </ul>
+
+    <p class="subtitle">{{'budget-credit-counseling-faqs.can-joint' | translate}}</p>
+    <p class="subtitle">{{'budget-credit-counseling-faqs.letterA' | translate}}
+      <span class="text">{{'budget-credit-counseling-faqs.text10' | translate}}</span>
+    </p>
+    <p class="text">{{'budget-credit-counseling-faqs.text11' | translate}}</p>
+
+    <p class="subtitle">{{'budget-credit-counseling-faqs.how-long' | translate}}</p>
+    <p class="subtitle">{{'budget-credit-counseling-faqs.letterA' | translate}}
+      <span class="text">{{'budget-credit-counseling-faqs.text12' | translate}}</span>
+    </p>
+
+    <p class="subtitle">{{'budget-credit-counseling-faqs.can-fail' | translate}}</p>
+    <p class="subtitle">{{'budget-credit-counseling-faqs.letterA' | translate}}
+      <span class="text">{{'budget-credit-counseling-faqs.text13' | translate}}</span>
+    </p>
+
+    <p class="subtitle">{{'budget-credit-counseling-faqs.how-much' | translate}}</p>
+    <p class="subtitle">{{'budget-credit-counseling-faqs.letterA' | translate}}
+      <span class="text">{{'budget-credit-counseling-faqs.text14' | translate}}</span>
+    </p>
+
+    <p class="subtitle">{{'budget-credit-counseling-faqs.what-determines' | translate}}</p>
+    <p class="subtitle">{{'budget-credit-counseling-faqs.letterA' | translate}}
+      <span class="text">{{'budget-credit-counseling-faqs.text15' | translate}}</span>
+    </p>
+    <p class="text" [innerHTML]="'budget-credit-counseling-faqs.text16' | translate"></p>
+    <p class="text">{{'budget-credit-counseling-faqs.text17' | translate}}</p>
+    <p class="subtitle" [innerHTML]="'budget-credit-counseling-faqs.text18' | translate"></p>
+    <p class="text">{{'budget-credit-counseling-faqs.text19' | translate}}</p>
+
+    <ul *ngFor="let item of requiredInfo" class="list">
+      <li>{{item.text | translate}}</li>
+    </ul>
+
+    <p class="text">{{'budget-credit-counseling-faqs.text20' | translate}}</p>
+    <p class="text">{{'budget-credit-counseling-faqs.text21' | translate}}
+      <span>{{'budget-credit-counseling-faqs.email' | translate}}</span>
+      <span>{{'budget-credit-counseling-faqs.fax' | translate}}</span>
+    </p>
+    <p class="text">{{'budget-credit-counseling-faqs.text22' | translate}}</p>
+    <p class="text">{{'budget-credit-counseling-faqs.text23' | translate}}</p>
+
+    <ul *ngFor="let item of considerationInfo" class="list">
+      <li [innerHTML]="item.text | translate"></li>
+    </ul>
+
+    <p class="text">{{'budget-credit-counseling-faqs.text24' | translate}}</p>
+    <p class="subtitle">{{'budget-credit-counseling-faqs.how-pay' | translate}}</p>
+    <p class="text">{{'budget-credit-counseling-faqs.text25' | translate}}</p>
+    <p class="subtitle">{{'budget-credit-counseling-faqs.what-accommodation' | translate}}</p>
+    <p class="text">{{'budget-credit-counseling-faqs.text26' | translate}}</p>
+    <p class="subtitle">{{'budget-credit-counseling-faqs.counseling-non-profit' | translate}}</p>
+    <p class="text">{{'budget-credit-counseling-faqs.text27' | translate}}</p>
+  </div>
+</div>

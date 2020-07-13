@@ -1,0 +1,43 @@
+.consumer-resources-container {
+  margin-bottom: 10px;
+  margin-top: 80px;
+  .consumer-resources {
+    width: 1110px;
+    font-size: 17px;
+
+    .text {
+      margin: 0 0 10px;
+    }
+  }
+}
+
+::ng-deep {
+  .mat-tab-label-active {
+    background: #559be8;
+    color: white;
+    border-right: 1px solid #4d89ca;
+    border-left: 1px solid #56a5fc;
+  }
+  .mat-tab-label {
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+}
+
+a {
+  color: #0a9200;
+  text-decoration: none;
+}
+
+.subtitle {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.credit-block {
+  margin-bottom: 45px;
+}
+
+.example-small-box {
+  padding: 30px 0px 30px 10px;
+}

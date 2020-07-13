@@ -1,0 +1,43 @@
+<div class="menu">
+  <div class="flex-row-wrap-section">
+    <div class="programs-and-services"><a class="text" routerLink="programs-and-services" routerLinkActive="active"
+        [matMenuTriggerFor]="programsServices" #menuTrigger="matMenuTrigger" (mouseenter)="menuTrigger.openMenu()">
+        {{'menu.programs-services' | translate}}
+      </a></div>
+    <div><a class="text" routerLink="consumer-debt-information" routerLinkActive="active"
+        [matMenuTriggerFor]="recources" #menuTrigger="matMenuTrigger"
+        (mouseenter)="menuTrigger.openMenu()">{{'menu.recources' | translate}}</a></div>
+  </div>
+  <mat-menu #programsServices="matMenu" class="drop-down-menu" [overlapTrigger]="false">
+    <span>
+      <button mat-menu-item [matMenuTriggerFor]="budgetCredit" #menuTrigger="matMenuTrigger"
+        (mouseenter)="menuTrigger.openMenu()" routerLink="content/budget-credit-counseling" routerLinkActive="active">
+        {{'menu.budget-credit' | translate}}
+      </button>
+      <button mat-menu-item routerLink="content/debtor-education"
+        routerLinkActive="active">{{'menu.pre-discharge' | translate}}</button>
+    </span>
+  </mat-menu>
+
+  <mat-menu #budgetCredit="matMenu" class="drop-down-menu" [overlapTrigger]="false">
+    <span>
+      <button (mouseenter)="menuTrigger.openMenu()" [innerHTML]="'menu.budget-and-credit' | translate">
+      </button>
+      <button [innerHTML]="'menu.wiser-consumer' | translate"></button>
+      <button [innerHTML]="'menu.client-reviews' | translate"></button>
+      <button [innerHTML]="'menu.contact-counselor' | translate"></button>
+      <button [innerHTML]="'menu.fee-schedule' | translate"></button>
+    </span>
+  </mat-menu>
+
+  <mat-menu #recources="matMenu" class="drop-down-menu" [overlapTrigger]="false">
+    <span>
+      <button [innerHTML]="'menu.consumer-recources' | translate"></button>
+      <button [innerHTML]="'menu.credit-laws' | translate"></button>
+      <button [innerHTML]="'menu.budgeting-faqs' | translate"></button>
+      <button [innerHTML]="'menu.budget-credit-glossary' | translate"></button>
+      <button [innerHTML]="'menu.negotiating' | translate"></button>
+      <button [innerHTML]="'menu.disaster-survivors' | translate"></button>
+    </span>
+  </mat-menu>
+</div>

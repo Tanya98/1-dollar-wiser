@@ -1,0 +1,65 @@
+@import "../../../../styles/shared";
+
+.header {
+  .menu-block {
+    // max-width: 1170px;
+    width: 1170px;
+    justify-content: space-between;
+    height: 185px;
+    display: flex;
+    background-color: white;
+    .logo {
+      max-width: 292px;
+      &:hover {
+          cursor: pointer;
+      }
+    }
+    .menu {
+      @include flex(row, space-between, flex-end);
+      padding-bottom: 40px;
+    }
+  }
+
+  .block-buttons {
+    @include flex(column, space-between, flex-end);
+    margin-left: 100px;
+    padding-bottom: 40px;
+
+    .phone-number {
+      color: #666;
+      font-size: 17px;
+    }
+  }
+
+  .registration-help-btn {
+    color: #fff;
+    background-color: #d9534f;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+    border: 0;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      background-color: #c9302c;
+    }
+  }
+
+  .login-btn {
+    line-height: 1.33;
+    margin-left: 20px;
+    background: #ff671a;
+    font-size: 18px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 6px;
+    border: 0;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+  }
+}

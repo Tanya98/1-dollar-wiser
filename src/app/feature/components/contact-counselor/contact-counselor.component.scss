@@ -1,0 +1,71 @@
+.contact-conselor {
+    margin-bottom: 10px;
+    width: 100%;
+    .contact-conselor-form {
+      width: 1110px;
+      .contact-conselor-field {
+        width: 100%;
+      }
+    }
+  }
+  
+  .contact-conselor-text-section {
+    text-align: center;
+    font-size: 17px;
+    p {
+      margin: 0 0 10px;
+    }
+  }
+  
+  .required-field {
+    color: red;
+  }
+  
+  ::ng-deep .mat-focused .mat-form-field-label {
+    color: #0a9201 !important;
+  }
+  
+  ::ng-deep .mat-form-field-label {
+    font-weight: 600 !important;
+  }
+  
+  //    ::ng-deep.mat-form-field-underline {
+  //     /*change color of underline*/
+  //     background-color: #0a9201 !important;
+  //   }
+  
+  ::ng-deep.mat-form-field-ripple {
+    background-color: #0a9201 !important;
+  }
+  
+  // ::ng-deep input.invalid .mat-form-field-label {
+  //   color: red !important;
+  // }
+  
+  ::ng-deep input.invalid, .mat-form-field-label,
+  .mat-focused .mat-form-field-label,
+  .mat-form-field-ripple {
+    background-color: red !important;
+  }
+  
+  .submit-btn {
+    border: 0;
+    color: white;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background-color: #d9534f;
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  .error-control {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 600;
+    color: red;
+  }
+  
+  .form-button {
+      width: 100%;
+  }

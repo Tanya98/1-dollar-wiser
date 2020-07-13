@@ -1,0 +1,56 @@
+<app-main-header [title]="'budget-credit-counseling.title'"></app-main-header>
+
+<div class="budget-credit-counseling-container flex-row-center-initial-section">
+  <div class="budget-credit-counseling">
+    <p class="text">{{'budget-credit-counseling.page-title' | translate}}</p>
+    <p class="text">{{'budget-credit-counseling.text1' | translate}}</p>
+    <p class="text">{{'budget-credit-counseling.text2' | translate}}
+      <span>never </span>
+      <span>{{'budget-credit-counseling.text3' | translate}}</span>
+    </p>
+
+    <img src="assets/images/creditcounseling.jpg">
+    <p>{{'budget-credit-counseling.text4' | translate}}</p>
+    <p class="underline-text">{{'budget-credit-counseling.text5' | translate}}</p>
+    <p><span class="yellow-text">By law</span>, {{'budget-credit-counseling.text6' | translate}}</p>
+
+    <div class="pre-bankruptcy-credit-block flex-column-wrap-section">
+      <p class="underline-text">{{'budget-credit-counseling.text7' | translate}}</p>
+      <p class="text">{{'budget-credit-counseling.text8' | translate}}</p>
+      <ul *ngFor="let item of budgetCreditCounseling">
+        <li>{{item.text | translate}}</li>
+      </ul>
+    </div>
+
+    <div class="pre-bankruptcy-credit-block flex-column-wrap-section">
+      <p class="underline-text">{{'budget-credit-counseling.how-much-cost' | translate}}</p>
+      <p class="text">{{'budget-credit-counseling.text9' | translate}}
+        <span class="yellow-text">per person</span>
+        <span>{{'budget-credit-counseling.text16' | translate}}</span>
+        <span class="green-text">online</span>
+        <span>{{'budget-credit-counseling.text17' | translate}}</span>
+      </p>
+    </div>
+
+    <div class="pre-bankruptcy-credit-block flex-column-wrap-section">
+      <p class="underline-text">{{'budget-credit-counseling.how-long-take' | translate}}</p>
+      <p class="text">{{'budget-credit-counseling.text10' | translate}}</p>
+    </div>
+
+    <div class="pre-bankruptcy-credit-block flex-column-wrap-section">
+      <p class="underline-text">{{'budget-credit-counseling.how-it-work' | translate}}</p>
+      <p class="text">{{'budget-credit-counseling.text11' | translate}}</p>
+      <ul class="process-info" *ngFor="let item of processInfo">
+        <li>{{item.text | translate}}</li>
+      </ul>
+    </div>
+
+    <div class="pre-bankruptcy-credit-block flex-column-wrap-section">
+      <p class="text">{{'budget-credit-counseling.text12' | translate}}
+        <span class="yellow-text">{{'budget-credit-counseling.text13' | translate}}</span>
+        <span>{{'budget-credit-counseling.text14' | translate}}</span>
+        <span class="text">{{'budget-credit-counseling.text15' | translate}}</span>
+      </p>
+    </div>
+  </div>
+</div>

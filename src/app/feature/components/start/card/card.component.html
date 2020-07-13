@@ -1,0 +1,11 @@
+<div class="card-block">
+  <div class="card-header">
+    <h2 class="title">{{cardHeaderTitle}}</h2>
+    <p class="text">{{cardHeaderText}}</p>
+  </div>
+  <div class="card-price-title">{{cardPriceTitle}}</div>
+  <ul *ngFor="let item of cardItems">
+    <li>{{item.item | translate}}</li>
+  </ul>
+  <button class="register-btn"><a>{{'card.register-btn' | translate}}</a></button>
+</div>

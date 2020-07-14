@@ -1,10 +1,10 @@
 <div class="footer-container flex-column-wrap-section">
   <nav class="footer-menu flex-row-center-initial-section ">
     <ul class="menu">
-      <li><a routerLink="content/privacy-policy" routerLinkActive="active">{{'footer.privacy-policy' | translate}}</a></li>
-      <li><a routerLink="content/about-1-wiser-consumer-education-inc" routerLinkActive="active">{{'footer.about' | translate}}</a></li>
-      <li><a routerLink="contact-us" routerLinkActive="active">{{'footer.contact-us' | translate}}</a></li>
-      <li><a routerLink="terms-service" routerLinkActive="active">{{'footer.terms-of-service' | translate}}</a></li>
+      <li><a (click)="privacyPolicyRedirect()">{{'footer.privacy-policy' | translate}}</a></li>
+      <li><a (click)="aboutRedirect()" >{{'footer.about' | translate}}</a></li>
+      <li><a (click)="contactUsedirect()">{{'footer.contact-us' | translate}}</a></li>
+      <li><a (click)="termsOfServiceRedirect()">{{'footer.terms-of-service' | translate}}</a></li>
     </ul>
   </nav>
   <div class="footer-block">

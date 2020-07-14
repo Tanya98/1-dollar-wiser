@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { allFormFieldsValidator } from 'src/app/utils/all-form-fields.validator';
 import { getErrorMessages } from './messages';
 import { TranslateService } from '@ngx-translate/core';
+import { ContactUsFormService } from 'src/app/core/api/contact-us-form-api.service';
 
 @Component({
     selector: 'app-contact-us',
@@ -15,7 +16,9 @@ export class ContactUsComponent implements OnInit {
 
     public errorMessages: any;
 
-    constructor(private formBuilder: FormBuilder, private translate: TranslateService) {
+    constructor(private formBuilder: FormBuilder,
+        private translate: TranslateService,
+        private service: ContactUsFormService) {
         this.contactUsForm = this.formBuilder.group({
             name: ['', [Validators.pattern('^[a-zA-Z-ЁёА-я]+$')]],
             phone: ['', [Validators.pattern('^[0-9]+$')]],
@@ -42,7 +45,13 @@ export class ContactUsComponent implements OnInit {
 
     public submit(form: FormGroup) {
         if (form.valid) {
-            console.log(form.value);
+            const formData = new FormData();
+            formData.append('name', this.contactUsForm.get('name').value);
+            formData.append('phone', this.contactUsForm.get('phone').value);
+            formData.append('email', this.contactUsForm.get('email').value);
+            formData.append('questions/comments', this.contactUsForm.get('questions').value);
+            this.service.sendData(formData);
+            this.contactUsForm.reset();
         } else {
             allFormFieldsValidator(form);
         }

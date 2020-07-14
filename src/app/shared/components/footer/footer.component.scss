@@ -27,11 +27,14 @@
 a {
   color: #c3f4c0;
   text-decoration: none;
+  &:hover {
+    color: #c3f4c0;
+  }
 }
 
 li {
   list-style: none;
-  padding: 25px 15px;
+  padding: 25px 12px;
   font-size: 1.3em;
   font-family: "Lato", sans-serif;
   cursor: pointer;

@@ -6,24 +6,29 @@ import { MainHeaderComponent } from './components/main-header/main-header.compon
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from '../material/material.module';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
     imports: [
         CommonModule,
         RouterModule,
         TranslateModule,
-        MaterialModule
+        MaterialModule,
+        ReactiveFormsModule
     ],
     exports: [
         RouterModule,
         HeaderComponent,
         MenuComponent,
         MainHeaderComponent,
+        ContactFormComponent
     ],
     declarations: [
        HeaderComponent,
        MenuComponent,
-       MainHeaderComponent
+       MainHeaderComponent,
+       ContactFormComponent
     ],
     providers: [],
 })

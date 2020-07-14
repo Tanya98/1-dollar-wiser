@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-menu',
@@ -8,7 +9,11 @@ import { TranslateService } from '@ngx-translate/core';
 })
 
 export class MenuComponent implements OnInit {
-    constructor(private translate: TranslateService) { }
+    constructor(private router: Router) { }
 
     ngOnInit() { }
+
+    programServiceRedirect() {
+        console.log('works');
+    }
 }

@@ -2,57 +2,62 @@
 
 <div class="disaster-survivors-tool-kit-container flex-row-center-initial-section">
   <div class="disaster-survivors-tool-kit">
-    <p>{{'disaster-survivors-tool-kit.subtitle' | translate}}</p>
-    <div>
-      <img src="">
+    <div class="flex-column-center-section">
+      <h2 class="title">{{'disaster-survivors-tool-kit.subtitle' | translate}}</h2>
+      <div class="hurricane-block"><img class="hurricane-img" src="assets/images/hurricane.jpg"></div>
     </div>
-    <p>{{'disaster-survivors-tool-kit.about-us' | translate}}</p>
-    <span [innerHTML]="'disaster-survivors-tool-kit.text1' | translate"></span>
-    <span>
-      <a href="http://www.1dollarwiser.com/" target="_blank">
-        {{'disaster-survivors-tool-kit.link' | translate}}
-      </a>
-    </span>
-    <p>{{'disaster-survivors-tool-kit.questions' | translate}}
+    <h1 class="title big-margin">{{'disaster-survivors-tool-kit.about-us' | translate}}</h1>
+    <p class="big-margin"><span [innerHTML]="'disaster-survivors-tool-kit.text1' | translate"></span>
+      <span>
+        <a href="http://www.1dollarwiser.com/" target="_blank">
+          {{'disaster-survivors-tool-kit.link' | translate}}
+        </a>
+      </span>
+    </p>
+    <p class="big-margin">{{'disaster-survivors-tool-kit.questions' | translate}}
       <a href="mailto:info@1dollarwiser.com" target="_blank">{{'disaster-survivors-tool-kit.link2' | translate}}</a>
     </p>
-    <p>{{'disaster-survivors-tool-kit.disclaimer' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.last-updated' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.wiser-consumer-education' | translate}}</p>
-
-    <span [innerHTML]="'disaster-survivors-tool-kit.verification' | translate"></span>
-    <a href="https://www.justice.gov/ust/credit-counseling-debtor-education-information" target="_blank">
-      {{'disaster-survivors-tool-kit.link3' | translate}}
-    </a>
-    <span>{{'disaster-survivors-tool-kit.list-approved' | translate}}</span>
-
-    <span [innerHTML]="'disaster-survivors-tool-kit.EIN' | translate"></span>
-    <a href="https://apps.irs.gov/app/eos/mainSearch.do;jsessionid=FESv0-wB0J-TbzpEVbqpPw__?mainSearchChoice=pub78&dispatchMethod=selectSearch"
-      target="_blank">
-      {{'disaster-survivors-tool-kit.link4' | translate}}
-    </a>
-    <span>{{'disaster-survivors-tool-kit.verify' | translate}}</span>
-
-    <p>{{'disaster-survivors-tool-kit.turned-upside-down' | translate}}</p>
+    <p class="big-margin">{{'disaster-survivors-tool-kit.disclaimer' | translate}}</p>
+    <div class="big-margin">
+      <p>{{'disaster-survivors-tool-kit.last-updated' | translate}}</p>
+      <p>{{'disaster-survivors-tool-kit.wiser-consumer-education' | translate}}</p>
+    </div>
+    <p class="big-margin"><span [innerHTML]="'disaster-survivors-tool-kit.verification' | translate"></span>
+      <a href="https://www.justice.gov/ust/credit-counseling-debtor-education-information" target="_blank">
+        {{'disaster-survivors-tool-kit.link3' | translate}}
+      </a>
+      <span>{{'disaster-survivors-tool-kit.list-approved' | translate}}</span>
+    </p>
+    <p class="big-margin"><span [innerHTML]="'disaster-survivors-tool-kit.EIN' | translate"></span>
+      <a href="https://apps.irs.gov/app/eos/mainSearch.do;jsessionid=FESv0-wB0J-TbzpEVbqpPw__?mainSearchChoice=pub78&dispatchMethod=selectSearch"
+        target="_blank">
+        {{'disaster-survivors-tool-kit.link4' | translate}}
+      </a>
+      <span>{{'disaster-survivors-tool-kit.verify' | translate}}</span>
+    </p>
+    <h1 class="title big-margin">{{'disaster-survivors-tool-kit.turned-upside-down' | translate}}</h1>
     <p>{{'disaster-survivors-tool-kit.drawing-from-lessons' | translate}}</p>
 
-    <img src="">
-    <p>{{'disaster-survivors-tool-kit.if-you-get-discouraged' | translate}}</p>
-    <ul>
-      <li *ngFor="let item of list">
-        {{item.text | translate}}
-      </li>
-    </ul>
-    <p [innerHTML]="'disaster-survivors-tool-kit.know-before' | translate"></p>
+    <div class="big-margin">
+      <img class="tool-kit-img" src="assets/images/people.jpg">
+      <p>{{'disaster-survivors-tool-kit.if-you-get-discouraged' | translate}}</p>
+      <ul>
+        <li *ngFor="let item of list">
+          {{item.text | translate}}
+        </li>
+      </ul>
+      <p [innerHTML]="'disaster-survivors-tool-kit.know-before' | translate"></p>
+    </div>
 
-    <span [innerHTML]="'disaster-survivors-tool-kit.if-you-do-not-feel' | translate"></span>
-    <a href="https://apps.irs.gov/app/eos/mainSearch.do;jsessionid=FESv0-wB0J-TbzpEVbqpPw__?mainSearchChoice=pub78&dispatchMethod=selectSearch"
-      target="_blank">
-      {{'disaster-survivors-tool-kit.link5' | translate}}
-    </a>
-    <span>{{'disaster-survivors-tool-kit.call-the-disaster-distress' | translate}}</span>
+    <p class="big-margin"><span [innerHTML]="'disaster-survivors-tool-kit.if-you-do-not-feel' | translate"></span>
+      <a href="https://apps.irs.gov/app/eos/mainSearch.do;jsessionid=FESv0-wB0J-TbzpEVbqpPw__?mainSearchChoice=pub78&dispatchMethod=selectSearch"
+        target="_blank">
+        {{'disaster-survivors-tool-kit.link5' | translate}}
+      </a>
+      <span>{{'disaster-survivors-tool-kit.call-the-disaster-distress' | translate}}</span>
+    </p>
 
-    <p>{{'disaster-survivors-tool-kit.register-with-FEMA' | translate}}</p>
+    <p class="title big-margin">{{'disaster-survivors-tool-kit.register-with-FEMA' | translate}}</p>
     <p>{{'disaster-survivors-tool-kit.sheltering' | translate}}</p>
     <p>
       <a href="https://www.fema.gov/news-release/2017/08/30/sheltering-and-immediate-assistance-available-after-hurricane-harvey"
@@ -61,157 +66,157 @@
       </a>
     </p>
     <p [innerHTML]="'disaster-survivors-tool-kit.use-excellent-resource' | translate"></p>
-    <p>{{'disaster-survivors-tool-kit.file-insurance-claims' | translate}}</p>
+    <p class="title big-margin">{{'disaster-survivors-tool-kit.file-insurance-claims' | translate}}</p>
     <p>{{'disaster-survivors-tool-kit.make-a-list' | translate}}</p>
 
-    <p>{{'disaster-survivors-tool-kit.flood-insurance' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.insurance-policy' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.website' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.property-address' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.contact-person' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.how-communicate' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.instructions' | translate}}</p>
-    <p>__________________________________________________________</p>
-    <p>__________________________________________________________</p>
-    <p>__________________________________________________________</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.claim-date' | translate}}</p>
+    <p class="subtitle big-margin">{{'disaster-survivors-tool-kit.flood-insurance' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.insurance-policy' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.website' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.property-address' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.contact-person' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.how-communicate' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.instructions' | translate}}</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.claim-date' | translate}}</p>
 
-    <p>{{'disaster-survivors-tool-kit.homeowner-insurance' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.insurance-policy' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.hurricane-deductibles' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.website' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.property-address' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.contact-person' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.how-communicate' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.items-lost' | translate}}</p>
-    <p>__________________________________________________________</p>
-    <p>__________________________________________________________</p>
-    <p>__________________________________________________________</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.instructions' | translate}}</p>
-    <p>__________________________________________________________</p>
-    <p>__________________________________________________________</p>
-    <p>__________________________________________________________</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.claim-date' | translate}}</p>
+    <p class="subtitle big-margin">{{'disaster-survivors-tool-kit.insurance.homeowner-insurance' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.insurance-policy' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.hurricane-deductibles' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.website' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.property-address' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.contact-person' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.how-communicate' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.items-lost' | translate}}</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.instructions' | translate}}</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.claim-date' | translate}}</p>
 
-    <p>{{'disaster-survivors-tool-kit.vehicle-insurance' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.insurance-policy' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.hurricane-deductibles' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.website' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.property-address' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.contact-person' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.how-communicate' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.items-lost' | translate}}</p>
-    <p>__________________________________________________________</p>
-    <p>__________________________________________________________</p>
-    <p>__________________________________________________________</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.instructions' | translate}}</p>
-    <p>__________________________________________________________</p>
-    <p>__________________________________________________________</p>
-    <p>__________________________________________________________</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.claim-date' | translate}}</p>
+    <p class="subtitle big-margin">{{'disaster-survivors-tool-kit.insurance.vehicle-insurance' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.insurance-policy' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.hurricane-deductibles' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.website' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.property-address' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.contact-person' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.how-communicate' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.items-lost' | translate}}</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.instructions' | translate}}</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.claim-date' | translate}}</p>
 
-    <p>{{'disaster-survivors-tool-kit.renter-insurance' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.insurance-policy' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.hurricane-deductibles' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.website' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.property-address' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.contact-person' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.how-communicate' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.items-lost' | translate}}</p>
-    <p>__________________________________________________________</p>
-    <p>__________________________________________________________</p>
-    <p>__________________________________________________________</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.instructions' | translate}}</p>
-    <p>__________________________________________________________</p>
-    <p>__________________________________________________________</p>
-    <p>__________________________________________________________</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.claim-date' | translate}}</p>
+    <p class="subtitle big-margin">{{'disaster-survivors-tool-kit.insurance.renter-insurance' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.insurance-policy' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.hurricane-deductibles' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.website' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.property-address' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.contact-person' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.how-communicate' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.items-lost' | translate}}</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.instructions' | translate}}</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.claim-date' | translate}}</p>
 
-    <p>{{'disaster-survivors-tool-kit.other-insurance' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.insurance-policy' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.hurricane-deductibles' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.website' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.property-address' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.contact-person' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.how-communicate' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.items-lost' | translate}}</p>
-    <p>__________________________________________________________</p>
-    <p>__________________________________________________________</p>
-    <p>__________________________________________________________</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.instructions' | translate}}</p>
-    <p>__________________________________________________________</p>
-    <p>__________________________________________________________</p>
-    <p>__________________________________________________________</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.claim-date' | translate}}</p>
+    <p class="subtitle big-margin">{{'disaster-survivors-tool-kit.insurance.other-insurance' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.insurance-policy' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.hurricane-deductibles' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.website' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.property-address' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.contact-person' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.how-communicate' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.items-lost' | translate}}</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.instructions' | translate}}</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.claim-date' | translate}}</p>
 
-    <p>{{'disaster-survivors-tool-kit.insurance.utilities' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.unless-you-know' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.note' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.electricity' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.company-account' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.name-of-person' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.website' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.security-deposit' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.address' | translate}}</p>
-    <p>__________________________________________________________</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.cancellation-date' | translate}}</p>
+    <p class="title big-margin">{{'disaster-survivors-tool-kit.insurance.utilities' | translate}}</p>
+    <p class="big-margin">{{'disaster-survivors-tool-kit.insurance.unless-you-know' | translate}}</p>
+    <p class="big-margin">{{'disaster-survivors-tool-kit.insurance.note' | translate}}</p>
+    <p class="big-margin">{{'disaster-survivors-tool-kit.insurance.electricity' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.company-account' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.name-of-person' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.website' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.security-deposit' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.address' | translate}}</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.cancellation-date' | translate}}</p>
 
-    <p>{{'disaster-survivors-tool-kit.gas' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.company-account' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.name-of-person' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.website' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.security-deposit' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.address' | translate}}</p>
-    <p>__________________________________________________________</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.cancellation-date' | translate}}</p>
+    <p class="subtitle">{{'disaster-survivors-tool-kit.insurance.gas' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.company-account' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.name-of-person' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.website' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.security-deposit' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.address' | translate}}</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.cancellation-date' | translate}}</p>
 
-    <p>{{'disaster-survivors-tool-kit.insurance.water' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.company-account' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.name-of-person' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.website' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.security-deposit' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.address' | translate}}</p>
-    <p>__________________________________________________________</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.cancellation-date' | translate}}</p>
+    <p class="subtitle">{{'disaster-survivors-tool-kit.insurance.water' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.company-account' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.name-of-person' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.website' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.security-deposit' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.address' | translate}}</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.cancellation-date' | translate}}</p>
 
-    <p>{{'disaster-survivors-tool-kit.insurance.sewer' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.company-account' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.name-of-person' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.website' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.security-deposit' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.address' | translate}}</p>
-    <p>__________________________________________________________</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.cancellation-date' | translate}}</p>
+    <p class="subtitle">{{'disaster-survivors-tool-kit.insurance.sewer' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.company-account' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.name-of-person' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.website' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.security-deposit' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.address' | translate}}</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.cancellation-date' | translate}}</p>
 
-    <p>{{'disaster-survivors-tool-kit.insurance.telephone-land-line' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.company-account' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.name-of-person' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.website' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.security-deposit' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.address' | translate}}</p>
-    <p>__________________________________________________________</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.cancellation-date' | translate}}</p>
+    <p class="subtitle">{{'disaster-survivors-tool-kit.insurance.telephone-land-line' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.company-account' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.name-of-person' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.website' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.security-deposit' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.address' | translate}}</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.cancellation-date' | translate}}</p>
 
-    <p>{{'disaster-survivors-tool-kit.insurance.satellite' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.company-account' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.name-of-person' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.website' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.security-deposit' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.address' | translate}}</p>
-    <p>__________________________________________________________</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.cancellation-date' | translate}}</p>
+    <p class="subtitle">{{'disaster-survivors-tool-kit.insurance.satellite' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.company-account' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.name-of-person' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.website' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.security-deposit' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.address' | translate}}</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.cancellation-date' | translate}}</p>
 
-    <p>{{'disaster-survivors-tool-kit.insurance.internet' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.company-account' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.name-of-person' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.website' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.security-deposit' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.address' | translate}}</p>
-    <p>__________________________________________________________</p>
-    <p>{{'disaster-survivors-tool-kit.insurance.cancellation-date' | translate}}</p>
+    <p class="subtitle">{{'disaster-survivors-tool-kit.insurance.internet' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.company-account' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.name-of-person' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.website' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.security-deposit' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.address' | translate}}</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.cancellation-date' | translate}}</p>
 
-    <p>{{'disaster-survivors-tool-kit.delivery-services' | translate}}</p>
-    <p>{{'disaster-survivors-tool-kit.go-to' | translate}}
+    <p class="title">{{'disaster-survivors-tool-kit.delivery-services' | translate}}</p>
+    <p class="big-margin">{{'disaster-survivors-tool-kit.go-to' | translate}}
       <a href="http://www.usps.gov/" target="_blank">{{'disaster-survivors-tool-kit.link7' | translate}}</a>
       <span>{{'disaster-survivors-tool-kit.and-submit' | translate}}</span>
     </p>
@@ -219,11 +224,270 @@
 
     <ul>
       <li *ngFor="let item of businessServicesList">
-          {{item.text | translate}}
+        {{item.text | translate}}
       </li>
     </ul>
 
-    <p [innerHTML]="'disaster-survivors-tool-kit.remember' | translate"></p>
+    <p class="big-margin" [innerHTML]="'disaster-survivors-tool-kit.remember' | translate"></p>
 
+    <p class="title">{{'credit-debt.title' | translate}}</p>
+    <p class="big-margin">{{'credit-debt.money-management' | translate}}</p>
+    <p>{{'credit-debt.every-credit' | translate}}</p>
+    <p class="credit-debt-margin">{{'credit-debt.by-signing' | translate}}</p>
+    <p>{{'credit-debt.generally-speaking' | translate}}</p>
+    <p>{{'credit-debt.physical-damage' | translate}}</p>
+    <p class="credit-debt-margin">{{'credit-debt.total-loss' | translate}}</p>
+    <p>{{'credit-debt.regardless' | translate}}</p>
+
+    <ul class="big-margin">
+      <li *ngFor="let item of agreementList">{{item.text | translate}}</li>
+    </ul>
+
+    <p>{{'credit-debt.any-change' | translate}}</p>
+
+    <ul class="big-margin">
+      <li *ngFor="let item of requestList">{{item.text | translate}}</li>
+    </ul>
+
+    <p>{{'credit-debt.the-one-know-exception' | translate}}</p>
+    <p class="credit-debt-margin"><span [innerHTML]="'credit-debt.foreclosure-relief' | translate"></span>
+      <span>
+        <a href="http://fema.pr-optout.com/Tracking.aspx?Data=HHL%3d9.768%26JDG%3c%3a9%3a-%3b3%40%26SDG%3c90%3a.&RE=IN&RI=711798&Preview=False&DistributionActionID=27037&Action=Follow+Link"
+          target="_blank">
+          {{'credit-debt.link' | translate}}</a></span>
+    </p>
+    <div class="big-margin">
+      <p>{{'credit-debt.as-mentioned-before' | translate}}</p>
+      <p><a
+          href="https://www.fema.gov/news-release/2017/08/30/sheltering-and-immediate-assistance-available-after-hurricane-harvey"
+          target="_blank">
+          {{'credit-debt.new-release' | translate}}</a></p>
+      <p><a href="https://www.irs.gov/newsroom/help-for-victims-of-hurricane-harvey"
+          target="_blank">{{'credit-debt.newsroom' | translate}}</a></p>
+      <p><a href="https://www.samhsa.gov/find-help/disaster-distress-helpline" target="_blank">
+          {{'credit-debt.samhsa' | translate}}</a></p>
+      <p><a href="https://store.samhsa.gov/shin/content/NMH02-0139/NMH02-0139.pdf"
+          target="_blank">{{'credit-debt.store' | translate}}</a></p>
+    </div>
+
+    <p class="bold-font-weight">{{'credit-debt.negotiating-creditors' | translate}}</p>
+    <p>{{'credit-debt.if-you-would-like' | translate}}</p>
+    <p [innerHTML]="'credit-debt.note' | translate"></p>
+    <p>{{'credit-debt.it-is-important-text' | translate}}</p>
+    <p>{{'credit-debt.for-best-result-text' | translate}}</p>
+    <p>{{'credit-debt.all-request-text' | translate}}</p>
+
+    <ul class="big-margin">
+      <li *ngFor="let item of documentationList">{{item.text | translate}}</li>
+      <li>1099</li>
+    </ul>
+
+    <p [innerHTML]="'credit-debt.purchased-credit' | translate"></p>
+    <p>{{'credit-debt.negotiating-with-governmental' | translate}}</p>
+    <p>{{'credit-debt.court-ordered-payments' | translate}}</p>
+    <p>{{'credit-debt.negotiating-for-changes' | translate}}</p>
+
+    <ul class="big-margin">
+      <li *ngFor="let item of followingList">{{item.text | translate}}</li>
+    </ul>
+
+    <p>{{'credit-debt.debt-secured' | translate}}</p>
+    <p>{{'credit-debt.many-creditors' | translate}}</p>
+    <p>{{'credit-debt.facilities' | translate}}</p>
+    <p>{{'credit-debt.written-signed-agreement' | translate}}</p>
+    <p>{{'credit-debt.never-allow' | translate}}</p>
+    <p>{{'credit-debt.debt-management-plan' | translate}}</p>
+
+    <ul>
+      <li>{{'credit-debt.DMP' | translate}}</li>
+      <li class="list-circle">{{'credit-debt.federal-investigation' | translate}}</li>
+      <li class="list-circle">{{'credit-debt.high-up-front-fees' | translate}}</li>
+      <li class="list-circle">{{'credit-debt.monthly-fees' | translate}}</li>
+      <li>{{'credit-debt.all-DMP' | translate}}</li>
+    </ul>
+
+    <p>{{'credit-debt.failed-attempts' | translate}}</p>
+    <p>{{'credit-debt.are-your-attempts' | translate}}</p>
+    <p>{{'credit-debt.of-the-hundreds-of-individuals' | translate}}
+      <a href="http://www.consumerfinance.gov/" target="_blank">{{'credit-debt.consumerfinance' | translate}}</a>
+      <span>{{'credit-debt.hotline' | translate}}</span>
+    </p>
+    <p>{{'credit-debt.following-information' | translate}}</p>
+
+    <ul>
+      <li *ngFor="let item of negotiatingFollowingInfo">{{item.text | translate}}</li>
+    </ul>
+    <p class="big-margin">{{'credit-debt.CFPB' | translate}}</p>
+
+    <p class="bold-font-weight">{{'credit-debit-cards.subtitle' | translate}}</p>
+    <p>{{'credit-debit-cards.do-you-have' | translate}}</p>
+    <p>{{'credit-debit-cards.pull-copy' | translate}}
+      <a href="http://www.annualcreditreport.com/" target="_blank">{{'credit-debit-cards.link' | translate}}</a>
+      <span>{{'credit-debit-cards.to-obtain' | translate}}</span>
+    </p>
+    <p>{{'credit-debit-cards.contact-your-bank' | translate}}</p>
+    <p>{{'credit-debit-cards.we-also-recommend' | translate}}</p>
+
+    <p class="application-field">{{'credit-debit-cards.card-name' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.account-number-cards' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.customer-service' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.cancel' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.name-of-person' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.card-issuer-instructions' | translate}}</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+
+    <p class="application-field">{{'credit-debit-cards.card-name' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.account-number-cards' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.customer-service' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.cancel' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.name-of-person' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.card-issuer-instructions' | translate}}</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+
+    <p class="application-field">{{'credit-debit-cards.card-name' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.account-number-cards' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.customer-service' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.cancel' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.name-of-person' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.card-issuer-instructions' | translate}}</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+
+    <p class="application-field">{{'credit-debit-cards.card-name' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.account-number-cards' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.customer-service' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.cancel' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.name-of-person' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.card-issuer-instructions' | translate}}</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+
+    <p class="application-field">{{'credit-debit-cards.card-name' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.account-number-cards' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.customer-service' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.cancel' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.name-of-person' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.card-issuer-instructions' | translate}}</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+
+    <p class="application-field">{{'credit-debit-cards.card-name' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.account-number-cards' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.customer-service' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.cancel' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.name-of-person' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.card-issuer-instructions' | translate}}</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+
+    <p class="application-field">{{'credit-debit-cards.card-name' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.account-number-cards' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.customer-service' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.cancel' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.name-of-person' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.card-issuer-instructions' | translate}}</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+
+    <p class="application-field">{{'credit-debit-cards.card-name' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.account-number-cards' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.customer-service' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.cancel' | translate}}</p>
+    <p class="application-field">{{'disaster-survivors-tool-kit.insurance.name-of-person' | translate}}</p>
+    <p class="application-field">{{'credit-debit-cards.card-issuer-instructions' | translate}}</p>
+    <p class="application-field">__________________________________________________________</p>
+    <p class="application-field">__________________________________________________________</p>
+
+    <p class="title">{{'protect-your-identity.subtitle' | translate}}</p>
+    <p class="big-margin">{{'protect-your-identity.ife-temporarily-disarray' | translate}}</p>
+    <p class="big-margin">
+      <span [innerHTML]="'protect-your-identity.credit-reports' | translate"></span>
+      <span><a>{{'protect-your-identity.link' | translate}}</a></span>
+      <span class="big-margin" [innerHTML]="'protect-your-identity.federal-law' | translate"></span>
+      <span><a>{{'protect-your-identity.link2' | translate}}</a></span>
+      <span>{{'protect-your-identity.federal-law-second-part' | translate}}</span>
+    </p>
+    <p class="big-margin" [innerHTML]="'protect-your-identity.financial-account-information' | translate"></p>
+    <p class="big-margin" [innerHTML]="'protect-your-identity.wireless-device-protection' | translate"></p>
+    <p class="big-margin" [innerHTML]="'protect-your-identity.specialty-consumer-reports' | translate"></p>
+    <p>{{'protect-your-identity.rent-or-own-home' | translate}}</p>
+
+    <p class="big-margin" [innerHTML]="'protect-your-identity.coreLogic-rental-properties' | translate"></p>
+    <p class="big-margin"><span [innerHTML]="'protect-your-identity.tenant-data' | translate"></span>
+      <span><a href="http://www.tenantdata.com/" target="_blank">
+          {{'protect-your-identity.tenant-data-link' | translate}}
+        </a></span>
+      <span>{{'protect-your-identity.social-security-card' | translate}}</span>
+    </p>
+
+    <p class="big-margin"><span [innerHTML]="'protect-your-identity.rent-bureau' | translate"></span>
+      <span><a href="http://www.experian.com/rentbureau/rental-payment.html" target="_blank">
+          {{'protect-your-identity.rent-bureau-link' | translate}}
+        </a></span>
+      <span>{{'protect-your-identity.right-hand-column' | translate}}</span>
+    </p>
+    <p>{{'protect-your-identity.if-you-are-looking' | translate}}</p>
+
+    <p class="big-margin" [innerHTML]="'protect-your-identity.credit-freeze' | translate"></p>
+    <p class="big-margin">{{'protect-your-identity.if-you-place' | translate}}</p>
+    <p class="big-margin">{{'protect-your-identity.if-you-are-married' | translate}}</p>
+    <p class="big-margin">{{'protect-your-identity.after-processing' | translate}}</p>
+
+
+    <p class="title">{{'security-freeze-basics.title' | translate}}</p>
+    <p>{{'security-freeze-basics.security-freeze' | translate}}</p>
+    <p class="title">{{'security-freeze-basics.subtitle' | translate}}</p>
+    <p>{{'security-freeze-basics.the-process-to-place' | translate}}</p>
+
+    <ul class="list">
+      <li *ngFor="let item of typesInfo">{{item.text | translate}}</li>
+    </ul>
+
+    <p class="big-margin">{{'security-freeze-basics.specific-requirements' | translate}}</p>
+
+    <p>{{'security-freeze-basics.equifax' | translate}}
+      <a href="http://www.equifax.com/CreditReportAssistance" target="_blank">
+        {{'security-freeze-basics.equifax-link' | translate}}</a>
+    </p>
+    <p>{{'security-freeze-basics.experian' | translate}}
+      <a href="http://www.experian.com/freeze" target="_blank">
+        {{'security-freeze-basics.experian-link' | translate}}</a>
+    </p>
+    <p>{{'security-freeze-basics.transUnion' | translate}}
+      <a href="https://freeze.transunion.com/" target="_blank">
+        {{'security-freeze-basics.transUnion-link' | translate}}</a>
+    </p>
+
+    <p class="big-margin">{{'security-freeze-basics.how-do-i-remove' | translate}}</p>
+    <p>{{'security-freeze-basics.request-your-security-freeze' | translate}}</p>
+
+    <p class="title big-margin">{{'create-written-budget.title' | translate}}</p>
+    <p>{{'create-written-budget.never-created-written-budget-before' | translate}}</p>
+    <p>{{'create-written-budget.are-you-going-to' | translate}}</p>
+
+    <ul>
+      <li *ngFor="let item of firstBudgetInfo">{{item.text | translate}}</li>
+    </ul>
+
+    <p class="big-margin">{{'create-written-budget.regardless' | translate}}</p>
+    <p>{{'create-written-budget.be-prepared-to-create' | translate}}</p>
+
+    <ul>
+      <li *ngFor="let item of secondBudgetInfo">{{item.text | translate}}</li>
+    </ul>
+
+    <p>{{'create-written-budget.you-will-be-faced' | translate}}</p>
+    <p>{{'create-written-budget.if-you-find-yourself' | translate}}</p>
+
+    <p [innerHTML]="'create-written-budget.budgeting-tool' | translate"></p>
+
+    <span>{{'create-written-budget.we-invite' | translate}}
+      <a href="https://www.1dollarwiser.com/user/register/233?destination=budget-and-credit-counseling" target="_blank">
+        {{'create-written-budget.create-written-budget-link' | translate}}
+      </a>
+    </span>
+    <span [innerHTML]="'create-written-budget.when-you-get-to-payment' | translate"></span>
   </div>
 </div>

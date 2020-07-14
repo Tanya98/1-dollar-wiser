@@ -44,3 +44,11 @@
 .flex-row-space-between-initial-section {
   @include flex(row, space-between, initial);
 }
+
+.container {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+.content {
+  width: 1110px;
+}

@@ -17,6 +17,12 @@
   }
 }
 
+a {
+  &:focus {
+    outline: none;
+  }
+}
+
 .drop-down-menu {
   display: none;
   position: absolute;
@@ -24,7 +30,7 @@
   top: 25px;
   left: 15px;
   margin-top: 10px;
-  width: 245px;
+  width: 300px;
   height: 70px;
   background-color: white;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4),
@@ -48,13 +54,17 @@
 
 ::ng-deep {
   .mat-menu-panel {
-    max-width: 340px !important;
+    max-width: 320px !important;
+  }
+  .mat-menu-content:not(:empty) {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
 }
 
 button {
   background-color: white;
-  padding: 10px 12px;
+  padding: 3px 25px 3px 8px;
   font-size: 13px;
   width: 100%;
   border: 0;
@@ -63,7 +73,7 @@ button {
     outline: none;
   }
   &:hover {
-    background-color: #389e38;
+    background-color: #389e38 !important;
     cursor: pointer;
     color: white;
     border: 0;

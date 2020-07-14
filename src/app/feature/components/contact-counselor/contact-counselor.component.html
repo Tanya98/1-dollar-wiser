@@ -1,40 +1,5 @@
 <app-main-header [title]="'contact-conselor.title'"></app-main-header>
 
 <div class="contact-conselor flex-column-initial-center-section">
-  <form class="contact-conselor-form flex-column-initial-center-section" [formGroup]="contactCounselorForm">
-    <mat-form-field class="contact-conselor-field">
-      <mat-label>{{'contact-conselor.name' | translate}}</mat-label>
-      <input matInput formControlName="name">
-    </mat-form-field>
-    <div class="error-control" *ngFor="let error of errorMessages.name">
-      <ng-container *ngIf="name.hasError(error.type) && (name.dirty || name.touched)">
-        <span class="error-message">{{error.message}}</span>
-      </ng-container>
-    </div>
-
-    <mat-form-field class="contact-conselor-field">
-      <mat-label>{{'contact-conselor.email' | translate}}</mat-label>
-      <input matInput formControlName="email">
-    </mat-form-field>
-    <div class="error-control" *ngFor="let error of errorMessages.email">
-      <ng-container *ngIf="email.hasError(error.type) && (email.dirty || email.touched)">
-        <span class="error-message">{{error.message}}</span>
-      </ng-container>
-    </div>
-
-    <mat-form-field class="contact-conselor-field">
-      <mat-label>{{'contact-conselor.subject' | translate}}</mat-label>
-      <input matInput formControlName="subject">
-    </mat-form-field>
-
-    <mat-form-field class="contact-conselor-field">
-      <mat-label>{{'contact-conselor.message' | translate}}</mat-label>
-      <textarea matInput formControlName="message"></textarea>
-    </mat-form-field>
-
-    <div class="form-button">
-      <button class="submit-btn" type="submit"
-        (click)="submit(contactCounselorForm)">{{'contact-us.submit-btn' | translate}}</button>
-    </div>
-  </form>
+  <app-contact-form></app-contact-form>
 </div>

@@ -60,7 +60,7 @@ const routes: Routes = [
         loadChildren: () => import('../../feature/components/client-reviews/client-reviews.module').then(m => m.ClientReviewsModule)
     },
     {
-        path: 'debtor-education-faqs',
+        path: 'content/debtor-education-faqs',
         loadChildren: () => import('../../feature/components/debtor-education-faqs/debtor-education-faqs.module').then(m => m.DebtorEducationFaqsModule)
     },
     {
@@ -94,6 +94,14 @@ const routes: Routes = [
     {
         path: 'disaster-survivors-tool-kit',
         loadChildren: () => import('../../feature/components/disaster-survivors-tool-kit/disaster-survivors-tool-kit.module').then(m => m.DisasterSurvivorsToolkitModule)
+    },
+    {
+        path: 'content/contact-counselor-debtor-education',
+        loadChildren: () => import('../../feature/components/contact-counselor-debtor-education/contact-counselor-debtor-education.module').then(m => m.ContactCounselorDebtorEducationModule)
+    },
+    {
+        path: 'content/1-wiser-consumer-education-fee-schedule',
+        loadChildren: () => import('../../feature/components/consumer-education-fee-schedule/consumer-education-fee-schedule.module').then(m => m.ConsumerEducationFeeScheduleModule)
     }
 ];
 

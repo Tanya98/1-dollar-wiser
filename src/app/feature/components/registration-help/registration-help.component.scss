@@ -1,6 +1,5 @@
-.registration-help-container {
-  margin-bottom: 15px;
-  .registration-help-video {
-    width: 960px;
+@media (max-width: 630px) {
+  iframe {
+    width: 100%;
   }
 }

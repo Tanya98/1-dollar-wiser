@@ -102,6 +102,10 @@ const routes: Routes = [
     {
         path: 'content/1-wiser-consumer-education-fee-schedule',
         loadChildren: () => import('../../feature/components/consumer-education-fee-schedule/consumer-education-fee-schedule.module').then(m => m.ConsumerEducationFeeScheduleModule)
+    },
+    {
+        path: 'budgeting-faqs',
+        loadChildren: () => import('../../feature/components/budgeting-faqs/budgeting-faqs.module').then(m => m.BudgetingFaqsModule)
     }
 ];
 

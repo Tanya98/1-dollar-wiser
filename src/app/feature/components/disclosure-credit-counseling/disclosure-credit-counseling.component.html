@@ -1,7 +1,7 @@
 <app-main-header [title]="'disclosure-credit-counseling.title'"></app-main-header>
 
-<div class="disclosure-credit-counseling-container flex-row-center-initial-section">
-  <div class="disclosure-credit-counseling">
+<div class="container flex-row-center-initial-section">
+  <div class="disclosure-credit-counseling content">
     <p class="page-title">{{'disclosure-credit-counseling.page-title' | translate}}</p>
     <p class="disclosure-credit-text text" [innerHTML]="'disclosure-credit-counseling.text1' | translate"></p>
     <p class="subtitle">{{'disclosure-credit-counseling.fee-schedule' | translate}}</p>
@@ -15,8 +15,8 @@
     <p class="text" [innerHTML]="'disclosure-credit-counseling.text8' | translate"></p>
     <p class="text">{{'disclosure-credit-counseling.text9' | translate}}</p>
 
-    <ul *ngFor="let item of infoSteps">
-      <li>{{item.text | translate}}</li>
+    <ul>
+      <li *ngFor="let item of infoSteps">{{item.text | translate}}</li>
     </ul>
 
     <p class="text">{{'disclosure-credit-counseling.text10' | translate}}</p>
@@ -27,8 +27,8 @@
     <p class="text">{{'disclosure-credit-counseling.text23' | translate}}</p>
     <p class="text">{{'disclosure-credit-counseling.text24' | translate}}</p>
 
-    <ul *ngFor="let item of considerationInfo">
-      <li [innerHTML]="item.text | translate"></li>
+    <ul>
+      <li *ngFor="let item of considerationInfo" [innerHTML]="item.text | translate"></li>
     </ul>
     <p class="text">{{'disclosure-credit-counseling.text12' | translate}}</p>
     <p class="subtitle">{{'disclosure-credit-counseling.bilingual-counseling-services' | translate}}</p>

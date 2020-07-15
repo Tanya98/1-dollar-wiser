@@ -1,4 +1,5 @@
 <app-main-header [title]="'contact-us.title'"></app-main-header>
+<div class="contact-us-contsiner container content flex-column-initial-center-section">
 <div class="contact-us-text-section flex-column-initial-center-section">
   <p>{{'contact-us.text1' | translate}}</p>
   <p>{{'contact-us.text2' | translate}}</p>
@@ -9,8 +10,6 @@
   <p>{{'contact-us.text7' | translate}}</p>
   <p>{{'contact-us.text8' | translate}}</p>
 </div>
-
-<div class="contact-us-contsiner flex-column-initial-center-section">
   <form class="contact-us-form flex-column-initial-center-section" [formGroup]="contactUsForm">
     <mat-form-field class="contact-us-field">
       <mat-label>Name</mat-label>

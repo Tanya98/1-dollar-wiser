@@ -1,13 +1,8 @@
-.budget-credit-counseling-container {
-  margin-bottom: 10px;
-  margin-top: 80px;
-  .budget-credit-counseling {
-    width: 1110px;
-    font-size: 17px;
+.budget-credit-counseling {
+  font-size: 17px;
 
-    .text {
-      margin: 0 0 10px;
-    }
+  .text {
+    margin: 0 0 10px;
   }
 }
 
@@ -20,6 +15,10 @@ img {
 
 .pre-bankruptcy-credit-block {
   margin-top: 40px;
+}
+
+.size {
+  font-size: 18px;
 }
 
 .underline-text {
@@ -48,5 +47,12 @@ ul {
   padding-left: 1.5em;
   li {
     list-style: none;
+  }
+}
+
+@media (max-width: 460px) {
+  img {
+    max-width: 300px;
+    max-height: 215px;
   }
 }

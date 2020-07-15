@@ -1,13 +1,14 @@
 <div class="menu">
   <div class="flex-row-wrap-section">
-    <div><a class="text" (click)="programServiceRedirect()"
-        [matMenuTriggerFor]="programsServices" #programsServicesMenuTrigger="matMenuTrigger"
-        (mouseenter)="programsServicesMenuTrigger.openMenu()">
+    <div routerLink="content/budget-credit-counseling" routerLinkActive="active">
+        <button  class="text" 
+         [matMenuTriggerFor]="programsServices"
+        #programsServicesMenuTrigger="matMenuTrigger" (mouseenter)="programsServicesMenuTrigger.openMenu()">
         {{'menu.programs-services' | translate}}
-      </a></div>
-    <div><a class="text" routerLink="consumer-debt-information" routerLinkActive="active"
+      </button></div>
+    <div><button class="text" routerLink="consumer-debt-information" routerLinkActive="active"
         [matMenuTriggerFor]="recources" #recourcesMenuTrigger="matMenuTrigger"
-        (mouseenter)="recourcesMenuTrigger.openMenu()">{{'menu.recources' | translate}}</a></div>
+        (mouseenter)="recourcesMenuTrigger.openMenu()">{{'menu.recources' | translate}}</button></div>
   </div>
   <mat-menu #programsServices="matMenu" class="drop-down-menu" [overlapTrigger]="false">
     <span>
@@ -62,7 +63,8 @@
         routerLinkActive="active"></button>
       <button [innerHTML]="'menu.credit-laws' | translate" routerLink="credit-laws-summaries"
         routerLinkActive="active"></button>
-      <button [innerHTML]="'menu.budgeting-faqs' | translate"></button>
+      <button [innerHTML]="'menu.budgeting-faqs' | translate" routerLink="budgeting-faqs"
+        routerLinkActive="active"></button>
       <button [innerHTML]="'menu.budget-credit-glossary' | translate" routerLink="content/budget-credit-glossary"
         routerLinkActive="active"></button>
       <button [innerHTML]="'menu.negotiating' | translate" routerLink="content/negotiating-creditors"

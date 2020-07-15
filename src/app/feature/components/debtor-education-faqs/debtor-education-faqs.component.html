@@ -1,7 +1,7 @@
 <app-main-header [title]="'debtor-education-faqs.title'"></app-main-header>
 
-<div class="debtor-education-faqs-container flex-row-center-initial-section">
-  <div class="debtor-education-faqs">
+<div class="container flex-row-center-initial-section">
+  <div class="debtor-education-faqs content">
     <p class="subtitle">{{'debtor-education-faqs.letterQ' | translate}}
       <span class="subtitle">{{'debtor-education-faqs.why-debtor-education' | translate}}</span></p>
     <p class="subtitle">{{'debtor-education-faqs.letterA' | translate}}
@@ -20,12 +20,18 @@
       <span class="text">{{'debtor-education-faqs.text4' | translate}}</span>
     </p>
 
-    <div *ngFor="let item of summaryInfo">
-      <ul>
-        <li>{{item.text | translate}}</li>
-      </ul>
-    </div>
-    
+    <ul>
+      <li>{{'debtor-education-faqs.item1' | translate}}</li>
+      <li>{{'debtor-education-faqs.item2' | translate}}</li>
+      <li><span class="yellow">{{'debtor-education-faqs.item3' | translate}}</span></li>
+      <li>{{'debtor-education-faqs.item4' | translate}}</li>
+      <li>{{'debtor-education-faqs.item5' | translate}}</li>
+      <li>{{'debtor-education-faqs.item6' | translate}}</li>
+      <li>{{'debtor-education-faqs.item7' | translate}}</li>
+      <li>{{'debtor-education-faqs.item8' | translate}}</li>
+      <li>{{'debtor-education-faqs.item9' | translate}}</li>
+    </ul>
+
     <p class="subtitle">{{'debtor-education-faqs.separate-debtor-education' | translate}}</p>
     <p class="subtitle">{{'debtor-education-faqs.letterA' | translate}}
       <span class="text">{{'debtor-education-faqs.text5' | translate}}</span>
@@ -55,9 +61,9 @@
     <p class="big-margin-bottom" [innerHTML]="'debtor-education-faqs.text13' | translate"></p>
     <p>{{'debtor-education-faqs.text14' | translate}}</p>
 
-    <div *ngFor="let item of requiredInfo" class="big-margin-bottom">
+    <div class="big-margin-bottom">
       <ul class="list">
-        <li>{{item.text | translate}}</li>
+        <li *ngFor="let item of requiredInfo">{{item.text | translate}}</li>
       </ul>
     </div>
 
@@ -66,12 +72,12 @@
       <span>{{'debtor-education-faqs.email' | translate}}</span>
       <span>{{'debtor-education-faqs.fax' | translate}}</span>
     </p>
-    <p  class="big-margin-bottom">{{'debtor-education-faqs.text17' | translate}}</p>
+    <p class="big-margin-bottom">{{'debtor-education-faqs.text17' | translate}}</p>
     <p>{{'debtor-education-faqs.text18' | translate}}</p>
 
-    <div *ngFor="let item of considerationInfo">
-      <ul *ngIf="item" class="list">
-        <li [innerHTML]="item.text | translate"></li>
+    <div >
+      <ul class="list">
+        <li *ngFor="let item of considerationInfo" [innerHTML]="item.text | translate"></li>
       </ul>
     </div>
 

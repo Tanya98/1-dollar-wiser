@@ -1,7 +1,7 @@
 <app-main-header [title]="'budget-credit-counseling-faqs.title'"></app-main-header>
 
-<div class="budget-credit-counseling-faqs-container flex-row-center-initial-section">
-  <div class="budget-credit-counseling-faqs">
+<div class="container flex-row-center-initial-section">
+  <div class="budget-credit-counseling-faqs content">
     <p class="subtitle">{{'budget-credit-counseling-faqs.credit-counseling' | translate}}</p>
     <p class="subtitle">{{'budget-credit-counseling-faqs.letterA' | translate}}
       <span class="text">{{'budget-credit-counseling-faqs.text1' | translate}}</span>
@@ -28,8 +28,8 @@
       <span class="text">{{'budget-credit-counseling-faqs.text7' | translate}}</span>
     </p>
     
-    <ul *ngFor="let item of summaryInfo">
-      <li>{{item.text | translate}}</li>
+    <ul>
+      <li *ngFor="let item of summaryInfo">{{item.text | translate}}</li>
     </ul>
 
     <p class="subtitle">{{'budget-credit-counseling-faqs.can-joint' | translate}}</p>
@@ -62,8 +62,8 @@
     <p class="subtitle" [innerHTML]="'budget-credit-counseling-faqs.text18' | translate"></p>
     <p class="text">{{'budget-credit-counseling-faqs.text19' | translate}}</p>
 
-    <ul *ngFor="let item of requiredInfo" class="list">
-      <li>{{item.text | translate}}</li>
+    <ul>
+      <li *ngFor="let item of requiredInfo" class="list">{{item.text | translate}}</li>
     </ul>
 
     <p class="text">{{'budget-credit-counseling-faqs.text20' | translate}}</p>
@@ -74,8 +74,8 @@
     <p class="text">{{'budget-credit-counseling-faqs.text22' | translate}}</p>
     <p class="text">{{'budget-credit-counseling-faqs.text23' | translate}}</p>
 
-    <ul *ngFor="let item of considerationInfo" class="list">
-      <li [innerHTML]="item.text | translate"></li>
+    <ul>
+      <li *ngFor="let item of considerationInfo" class="list" [innerHTML]="item.text | translate"></li>
     </ul>
 
     <p class="text">{{'budget-credit-counseling-faqs.text24' | translate}}</p>

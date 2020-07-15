@@ -2,10 +2,11 @@
   .footer-menu {
     background-color: #0a9201;
     width: 100%;
-    height: 90px;
+    // height: 90px;
     .menu {
       width: 565px;
       display: flex;
+      flex-wrap: wrap;
     }
   }
 

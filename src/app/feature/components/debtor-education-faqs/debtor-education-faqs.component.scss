@@ -1,14 +1,9 @@
-.debtor-education-faqs-container {
-  margin-bottom: 10px;
-  margin-top: 80px;
-  .debtor-education-faqs {
-    width: 1110px;
-    font-size: 18px;
+.debtor-education-faqs {
+  font-size: 18px;
 
-    .text {
-      margin: 0 0 10px;
-      font-weight: 400;
-    }
+  .text {
+    margin: 0 0 10px;
+    font-weight: 400;
   }
 }
 
@@ -32,5 +27,9 @@ ul {
 }
 
 .big-margin-bottom {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.yellow {
+  background-color: #ffff00;
 }

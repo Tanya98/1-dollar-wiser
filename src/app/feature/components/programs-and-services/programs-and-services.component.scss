@@ -1,18 +1,12 @@
-.programs-and-services-container {
-    margin-bottom: 10px;
-    margin-top: 80px;
-    .programs-and-services {
-      width: 1110px;
-      font-size: 17px;
+.programs-and-services {
+  font-size: 17px;
+  p {
+    margin: 0 0 10px;
+  }
+}
 
-      p {
-          margin: 0 0 10px;
-      }
-    }
-  }
-  
-  .last-updated-section {
-      text-align: center;
-      margin-top: 50px;
-      color: #008000;
-  }
+.last-updated-section {
+  text-align: center;
+  margin-top: 50px;
+  color: #008000;
+}

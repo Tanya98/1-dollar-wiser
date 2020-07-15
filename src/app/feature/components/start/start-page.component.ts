@@ -23,4 +23,8 @@ export class StartPageComponent implements OnInit {
     constructor(private translate: TranslateService) { }
 
     ngOnInit() { }
+
+    public open() {
+        window.open('https://www.1dollarwiser.com/sites/default/files/Disaster%20Survivor%27s%20Toolkit.pdf', '', 'resizable=no,status=no,location=no,toolbar=no,menubar=no,fullscreen=yes,scrollbars=no,dependent=no'); return false;
+    }
 }

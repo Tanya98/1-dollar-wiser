@@ -2,7 +2,6 @@
 
 .header {
   .menu-block {
-    // max-width: 1170px;
     width: 1170px;
     justify-content: space-between;
     height: 185px;
@@ -11,7 +10,10 @@
     .logo {
       max-width: 292px;
       &:hover {
-          cursor: pointer;
+        cursor: pointer;
+      }
+      &:focus {
+        outline: none;
       }
     }
     .menu {
@@ -61,5 +63,34 @@
     &:focus {
       outline: none;
     }
+  }
+}
+
+@media (max-width: 770px) {
+  .menu {
+    display: none !important;
+  }
+  .img-block {
+    width: 100%;
+  }
+  .logo {
+    max-width: 100% !important;
+  }
+  .login-btn {
+    margin-left: 0 !important;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 475px) {
+  .logo {
+    max-width: 300px !important;
+  }
+  .block-buttons {
+    margin-left: 0 !important;
+  }
+  .menu-block {
+    flex-wrap: wrap;
+    justify-content: center !important;
   }
 }

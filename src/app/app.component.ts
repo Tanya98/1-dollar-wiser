@@ -14,24 +14,24 @@ export class AppComponent {
         translate.setDefaultLang('en');
         translate.use('en');
 
-        this.router.events.subscribe((e: RouterEvent) => {
-            this.navigationInterceptor(e);
-        });
+        // this.router.events.subscribe((e: RouterEvent) => {
+        //     this.navigationInterceptor(e);
+        // });
     }
 
-    navigationInterceptor(event: RouterEvent): void {
-        if (event instanceof NavigationStart) {
-            this.loading = true
-        }
-        if (event instanceof NavigationEnd) {
-            this.loading = false
-        }
+    // navigationInterceptor(event: RouterEvent): void {
+    //     if (event instanceof NavigationStart) {
+    //         this.loading = true
+    //     }
+    //     if (event instanceof NavigationEnd) {
+    //         this.loading = false
+    //     }
 
-        // if (event instanceof NavigationCancel) {
-        //     this.loading = false
-        // }
-        // if (event instanceof NavigationError) {
-        //     this.loading = false
-        // }
-    }
+    //     // if (event instanceof NavigationCancel) {
+    //     //     this.loading = false
+    //     // }
+    //     // if (event instanceof NavigationError) {
+    //     //     this.loading = false
+    //     // }
+    // }
 }

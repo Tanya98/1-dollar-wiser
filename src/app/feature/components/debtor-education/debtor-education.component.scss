@@ -1,13 +1,8 @@
-.debtor-education-container {
-  margin-bottom: 10px;
-  margin-top: 80px;
-  .debtor-education {
-    width: 1110px;
-    font-size: 17px;
+.debtor-education {
+  font-size: 17px;
 
-    .text {
-      margin: 0 0 10px;
-    }
+  .text {
+    margin: 0 0 10px;
   }
 }
 
@@ -36,13 +31,19 @@ img {
 }
 
 .red-text {
-    color: red;
+  color: red;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 10px;
-    list-style: none;
-    font-size: 17px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  list-style: none;
+  font-size: 17px;
 }
+@media (max-width: 460px) {
+    img {
+      max-width: 300px;
+      max-height: 215px;
+    }
+  }

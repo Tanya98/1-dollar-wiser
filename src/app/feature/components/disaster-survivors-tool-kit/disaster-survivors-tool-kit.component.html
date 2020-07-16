@@ -478,13 +478,13 @@
       <li *ngFor="let item of secondBudgetInfo">{{item.text | translate}}</li>
     </ul>
 
-    <p>{{'create-written-budget.you-will-be-faced' | translate}}</p>
+    <p [innerHTML]="'create-written-budget.you-will-be-faced' | translate"></p>
     <p>{{'create-written-budget.if-you-find-yourself' | translate}}</p>
 
     <p [innerHTML]="'create-written-budget.budgeting-tool' | translate"></p>
 
     <span>{{'create-written-budget.we-invite' | translate}}
-      <a>
+      <a (click)="register()">
         {{'create-written-budget.create-written-budget-link' | translate}}
       </a>
     </span>

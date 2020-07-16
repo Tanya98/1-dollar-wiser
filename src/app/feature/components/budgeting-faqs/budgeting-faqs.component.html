@@ -4,7 +4,10 @@
   <div class="budgeting-faqs content">
     <p class="subtitle">{{'budgeting-faqs.subtitle' | translate}}</p>
     <p [innerHTML]="'budgeting-faqs.wiser-consumer-education-text' | translate"></p>
-    <h2 class="faqs-title">{{'budgeting-faqs.faqs' | translate}}</h2>
+    <div class="flex-row-center-section">
+      <h2 class="faqs-title">{{'budgeting-faqs.faqs' | translate}}</h2>
+      <div class="line"></div>
+    </div>
     <mat-accordion>
       <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
         <mat-expansion-panel-header class="header">

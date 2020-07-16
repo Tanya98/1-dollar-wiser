@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RedirectService } from 'src/app/core/services/redirect.service';
 
 @Component({
     selector: 'app-disaster-survivors-tool-kit',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class DisasterSurvivorsToolkitComponent implements OnInit {
+    constructor(private service: RedirectService) { }
+
     public list: Object[] = [
         { text: "disaster-survivors-tool-kit.item1" },
         { text: "disaster-survivors-tool-kit.item2" },
@@ -92,8 +95,9 @@ export class DisasterSurvivorsToolkitComponent implements OnInit {
         { text: "create-written-budget.number-of-people" },
         { text: "create-written-budget.employment-income-changes" },
     ];
-
-    constructor() { }
-
     ngOnInit() { }
+
+    public register() {
+        this.service.loginNow();
+    }
 }

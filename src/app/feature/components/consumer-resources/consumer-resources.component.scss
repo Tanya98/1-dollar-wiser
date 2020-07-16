@@ -36,3 +36,9 @@ a {
 .example-small-box {
   padding: 30px 0px 30px 10px;
 }
+
+@media(max-width: 575px){
+    .container{
+        width: 320px !important;
+    }
+}

@@ -1,0 +1,32 @@
+::ng-deep {
+  .nav-link {
+    background-color: #0a9201 !important;
+    color: white !important;
+  }
+  .nav-link.active {
+    background-color: white !important;
+    color: inherit !important;
+    border-left: 3px solid #fbe20f !important;
+  }
+  li.nav-item {
+    width: 200px !important;
+  }
+}
+
+a {
+  font-size: 17px;
+}
+
+ul {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 2em;
+  color: rgb(102, 102, 102);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24.5px;
+  span {
+    font-size: 20px;
+    color: #000000;
+  }
+}

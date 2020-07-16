@@ -1,0 +1,94 @@
+<app-main-header [title]="'debtor-education-faqs.title'"></app-main-header>
+
+<div class="container flex-row-center-initial-section">
+  <div class="debtor-education-faqs content">
+    <p class="subtitle">{{'debtor-education-faqs.letterQ' | translate}}
+      <span class="subtitle">{{'debtor-education-faqs.why-debtor-education' | translate}}</span></p>
+    <p class="subtitle">{{'debtor-education-faqs.letterA' | translate}}
+      <span class="text">{{'debtor-education-faqs.text1' | translate}}</span>
+    </p>
+    <p class="subtitle">{{'debtor-education-faqs.where-consumer-education' | translate}}</p>
+    <p class="subtitle">{{'debtor-education-faqs.letterA' | translate}}
+      <span class="text">{{'debtor-education-faqs.text2' | translate}}</span>
+    </p>
+    <p class="subtitle">{{'debtor-education-faqs.when-can-take' | translate}}</p>
+    <p class="subtitle">{{'debtor-education-faqs.letterA' | translate}}
+      <span class="text">{{'debtor-education-faqs.text3' | translate}}</span>
+    </p>
+    <p class="subtitle">{{'debtor-education-faqs.what-information-need' | translate}}</p>
+    <p class="subtitle">{{'debtor-education-faqs.letterA' | translate}}
+      <span class="text">{{'debtor-education-faqs.text4' | translate}}</span>
+    </p>
+
+    <ul>
+      <li>{{'debtor-education-faqs.item1' | translate}}</li>
+      <li>{{'debtor-education-faqs.item2' | translate}}</li>
+      <li><span class="yellow">{{'debtor-education-faqs.item3' | translate}}</span></li>
+      <li>{{'debtor-education-faqs.item4' | translate}}</li>
+      <li>{{'debtor-education-faqs.item5' | translate}}</li>
+      <li>{{'debtor-education-faqs.item6' | translate}}</li>
+      <li>{{'debtor-education-faqs.item7' | translate}}</li>
+      <li>{{'debtor-education-faqs.item8' | translate}}</li>
+      <li>{{'debtor-education-faqs.item9' | translate}}</li>
+    </ul>
+
+    <p class="subtitle">{{'debtor-education-faqs.separate-debtor-education' | translate}}</p>
+    <p class="subtitle">{{'debtor-education-faqs.letterA' | translate}}
+      <span class="text">{{'debtor-education-faqs.text5' | translate}}</span>
+    </p>
+    <p class="subtitle">{{'debtor-education-faqs.how-long' | translate}}</p>
+    <p class="subtitle">{{'debtor-education-faqs.letterA' | translate}}
+      <span class="text">{{'debtor-education-faqs.text6' | translate}}</span>
+    </p>
+    <p class="subtitle">{{'debtor-education-faqs.can-you-fail' | translate}}</p>
+    <p class="subtitle">{{'debtor-education-faqs.letterA' | translate}}
+      <span class="text">{{'debtor-education-faqs.text7' | translate}}</span>
+    </p>
+    <p>{{'debtor-education-faqs.wiser-let-the-court' | translate}}</p>
+    <p>{{'debtor-education-faqs.letterA' | translate}}
+      <span class="text">{{'debtor-education-faqs.text8' | translate}}</span>
+    </p>
+    <p class="subtitle">{{'debtor-education-faqs.how-much' | translate}}</p>
+    <p class="subtitle">{{'debtor-education-faqs.letterA' | translate}}
+      <span class="text">{{'debtor-education-faqs.text9' | translate}}</span>
+    </p>
+    <p class="subtitle">{{'debtor-education-faqs.what-determines' | translate}}</p>
+    <p class="subtitle big-margin-bottom">{{'debtor-education-faqs.letterA' | translate}}
+      <span class="text">{{'debtor-education-faqs.text10' | translate}}</span>
+    </p>
+    <p class="big-margin-bottom" [innerHTML]="'debtor-education-faqs.text11' | translate"></p>
+    <p class="big-margin-bottom">{{'debtor-education-faqs.text12' | translate}}</p>
+    <p class="big-margin-bottom" [innerHTML]="'debtor-education-faqs.text13' | translate"></p>
+    <p>{{'debtor-education-faqs.text14' | translate}}</p>
+
+    <div class="big-margin-bottom">
+      <ul class="list">
+        <li *ngFor="let item of requiredInfo">{{item.text | translate}}</li>
+      </ul>
+    </div>
+
+    <p class="big-margin-bottom">{{'debtor-education-faqs.text15' | translate}}</p>
+    <p>{{'debtor-education-faqs.text16' | translate}}
+      <span>{{'debtor-education-faqs.email' | translate}}</span>
+      <span>{{'debtor-education-faqs.fax' | translate}}</span>
+    </p>
+    <p class="big-margin-bottom">{{'debtor-education-faqs.text17' | translate}}</p>
+    <p>{{'debtor-education-faqs.text18' | translate}}</p>
+
+    <div >
+      <ul class="list">
+        <li *ngFor="let item of considerationInfo" [innerHTML]="item.text | translate"></li>
+      </ul>
+    </div>
+
+    <p>{{'debtor-education-faqs.text19' | translate}}</p>
+    <p class="subtitle">{{'debtor-education-faqs.how-pay' | translate}}</p>
+    <p class="subtitle">{{'debtor-education-faqs.letterA' | translate}}
+      <span class="text">{{'debtor-education-faqs.text20' | translate}}</span>
+    </p>
+    <p class="subtitle">{{'debtor-education-faqs.text21' | translate}}</p>
+    <p class="subtitle">{{'debtor-education-faqs.letterA' | translate}}
+      <span class="text">{{'debtor-education-faqs.text22' | translate}}</span>
+    </p>
+  </div>
+</div>

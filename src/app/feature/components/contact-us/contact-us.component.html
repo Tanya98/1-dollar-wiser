@@ -1,0 +1,59 @@
+<app-main-header [title]="'contact-us.title'"></app-main-header>
+<div class="contact-us-contsiner container content flex-column-initial-center-section">
+<div class="contact-us-text-section flex-column-initial-center-section">
+  <p>{{'contact-us.text1' | translate}}</p>
+  <p>{{'contact-us.text2' | translate}}</p>
+  <p>{{'contact-us.text3' | translate}}</p>
+  <p>{{'contact-us.text4' | translate}}</p>
+  <p>{{'contact-us.text5' | translate}}</p>
+  <p>{{'contact-us.text6' | translate}}</p>
+  <p>{{'contact-us.text7' | translate}}</p>
+  <p>{{'contact-us.text8' | translate}}</p>
+</div>
+  <form class="contact-us-form flex-column-initial-center-section" [formGroup]="contactUsForm">
+    <mat-form-field class="contact-us-field">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name">
+    </mat-form-field>
+    <div class="error-control" *ngFor="let error of errorMessages.name">
+      <ng-container *ngIf="name.hasError(error.type) && (name.dirty || name.touched)">
+        <span class="error-message">{{error.message}}</span>
+      </ng-container>
+    </div>
+
+    <mat-form-field class="contact-us-field">
+      <mat-label>Phone</mat-label>
+      <input matInput formControlName="phone">
+    </mat-form-field>
+    <div class="error-control" *ngFor="let error of errorMessages.phone">
+      <ng-container *ngIf="phone.hasError(error.type) && (phone.dirty || phone.touched)">
+        <span class="error-message">{{error.message}}</span>
+      </ng-container>
+    </div>
+
+    <mat-form-field class="contact-us-field">
+      <mat-label>Email <span class="required-field">*</span></mat-label>
+      <input matInput formControlName="email">
+    </mat-form-field>
+    <div class="error-control" *ngFor="let error of errorMessages.email">
+      <ng-container *ngIf="email.hasError(error.type) && (email.dirty || email.touched)">
+        <span class="error-message">{{error.message}}</span>
+      </ng-container>
+    </div>
+
+    <mat-form-field class="contact-us-field">
+      <mat-label>Questions / Comments</mat-label>
+      <textarea matInput formControlName="questions"></textarea>
+    </mat-form-field>
+
+    <div class="captcha">
+      <p></p>
+      <div>
+      </div>
+    </div>
+    <div class="form-button">
+      <button class="submit-btn" type="submit"
+        (click)="submit(contactUsForm)">{{'contact-us.submit-btn' | translate}}</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,272 @@
+<app-main-header [title]="'budgeting-faqs.title'"></app-main-header>
+
+<div class="container flex-row-center-initial-section">
+  <div class="budgeting-faqs content">
+    <p class="subtitle">{{'budgeting-faqs.subtitle' | translate}}</p>
+    <p [innerHTML]="'budgeting-faqs.wiser-consumer-education-text' | translate"></p>
+    <div class="flex-row-center-section">
+      <h2 class="faqs-title">{{'budgeting-faqs.faqs' | translate}}</h2>
+      <div class="line"></div>
+    </div>
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.how-do-enter-income' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.how-do-enter-income-text' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.goal-based' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.goal-based-text' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.unsecured-priority-debts' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.unsecured-priority-debts-text' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.put-on-card' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.put-on-card-text' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.fees-bank-charges' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.fees-bank-charges-text' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.credit-card-company' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.credit-card-company-text' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.wiser-allow-budget' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.wiser-allow-budget-text' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.should-pay-off' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.should-pay-off-text' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.should-not-pay-off' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.should-not-pay-off-text' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.pay-off' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.pay-off-text' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.debt-roll' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.text1' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.text2' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.text3' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.text4' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.what-is-creditor' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.what-is-creditor-text' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.debt-payments' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.enter-your-debt-payments' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.all-mortgages' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.monthly-payments' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.loans-for-recreational' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.other-debts' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.how-much' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.how-much-text' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.unsecured-debts' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.unsecured-debts-text' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.credit-cards' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.credit-cards-collection' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.medical-bills' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.non-card' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.signature-loan' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.student-loan' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.utility-loan' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.priority-debts' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.priority-debts-text' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.alimony' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.child-support' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.restitution' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.state-income-tax' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.federal-income-tax' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.secured-debts' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.secured-debts-text' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.mortgages' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.equity-loans' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.vehicle-loans' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.furniture-appliance-loans' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.margin-accounts' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.property-tax' | translate}}</p>
+        <p class="faqs-text">{{'budgeting-faqs.mechanics-lien' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.investment' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.investment-text' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.ideal-budget' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.ideal-budget-text' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.savings-investment' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.savings-investment-text' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.ideal-budget-debt-payments' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.ideal-budget-debt-payments-text' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.how-do-budget' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.how-do-budget-text' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.put-my-budget' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.put-my-budget-text' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.actual-expenditures' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.actual-expenditures-text' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.security-deposit' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.security-deposit-text' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.debt-to-income' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.debt-to-income-text' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.roll-up-program' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.roll-up-program-text' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.gifts-and-holidays' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.gifts-and-holidays-text' | translate}}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            {{'budgeting-faqs.unexpected-expenses' | translate}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="faqs-text">{{'budgeting-faqs.unexpected-expenses-text' | translate}}</p>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+</div>

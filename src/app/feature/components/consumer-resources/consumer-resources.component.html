@@ -1,0 +1,246 @@
+<app-main-header [title]="'consumer-resources.title'"></app-main-header>
+
+<div class="container flex-row-center-initial-section">
+  <div class="consumer-resources content">
+    <mat-tab-group dynamicHeight class="container">
+      <mat-tab label="{{'consumer-resources.tab-label1' | translate}}">
+        <div class="example-small-box mat-elevation-z4">
+          <div class="experian-block">
+            <p class="subtitle">{{'consumer-resources.experian' | translate}}</p>
+            <p [innerHTML]="'consumer-resources.address' | translate"></p>
+            <p>
+              <a [innerHTML]="'consumer-resources.experian-email' | translate" href="http://www.experian.com/"
+                target="_blank">
+            </a>
+            </p>
+          </div>
+          <div class="credit-block">
+            <p class="subtitle">{{'consumer-resources.equifax-info-services' | translate}}</p>
+            <p [innerHTML]="'consumer-resources.address2' | translate"></p>
+            <p>
+              <a [innerHTML]="'consumer-resources.equifax-email' | translate" href="http://www.equifax.com/"
+                target="_blank"></a>
+            </p>
+          </div>
+          <div class="credit-block">
+            <p class="subtitle">{{'consumer-resources.transunion' | translate}}</p>
+            <p [innerHTML]="'consumer-resources.address3' | translate"></p>
+            <p>
+              <a [innerHTML]="'consumer-resources.transunion-email' | translate" href="http://www.transunion.com/"
+                target="_blank"></a>
+            </p>
+          </div>
+          <div class="credit-block">
+            <p class="subtitle">{{'consumer-resources.free-annual-credit-report' | translate}}</p>
+            <p [innerHTML]="'consumer-resources.address4' | translate"></p>
+            <p>
+              <a [innerHTML]="'consumer-resources.free-annual-credit-report-email' | translate"
+                href="http://www.annualcreditreport.com/" target="_blank"></a>
+            </p>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="{{'consumer-resources.tab-label2' | translate}}">
+        <div class="example-small-box mat-elevation-z4">
+          <p>{{'consumer-resources.text1' | translate}}
+            <span><a href="http://www.irs.gov/uac/Affordable-Care-Act-Tax-Provisions-Home" target="_blank">
+                {{'consumer-resources.affordable-link' | translate}}
+              </a></span>
+          </p>
+          <p>{{'consumer-resources.text2' | translate}}
+            <span><a href="http://www.annualcreditreport.com/cra/index.jsp"
+                target="_blank">{{'consumer-resources.annual-credit-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.text3' | translate}}
+            <span><a href="http://www.cms.hhs.gov/medicaid"
+                target="_blank">{{'consumer-resources.centers-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.text4' | translate}}
+            <span><a
+                href="http://www.dol.gov/ebsa/contactEBSA/consumerassistance.html">{{'consumer-resources.consumer-assistance' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.text5' | translate}}
+            <span><a
+                href="http://www.federalreserve.gov/creditreports/">{{'consumer-resources.federalreserve-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.text6' | translate}}
+            <span><a
+                href="http://www.consumerfinance.gov/">{{'consumer-resources.consumerfinance-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.text7' | translate}}
+            <span><a
+                href="http://consumeraction.gov/">{{'consumer-resources.consumeraction-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.text8' | translate}}
+            <span><a href="http://www.fdic.gov/">{{'consumer-resources.federal-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.text9' | translate}}
+            <span>{{'consumer-resources.financial-preparedness' | translate}}</span>
+          </p>
+          <p>{{'consumer-resources.text10' | translate}}
+            <span><a href="http://www.fhfb.gov/">{{'consumer-resources.federal-housing-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.text11' | translate}}
+            <span><a
+                href="https://www.frbatlanta.org/education.aspx">{{'consumer-resources.federal-reserve-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.text12' | translate}}
+            <span><a
+                href="http://studentaid.ed.gov/">{{'consumer-resources.federal-student-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.text13' | translate}}
+            <span><a href="http://www.ftc.gov/">{{'consumer-resources.federal-trade-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.text14' | translate}}
+            <span><a href="https://www.healthcare.gov/">{{'consumer-resources.healthcare-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.text15' | translate}}
+            <span><a
+                href="http://makinghomesaffordable.gov/">{{'consumer-resources.making-homes-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.text16' | translate}}
+            <span><a href="http://www.ssa.gov/">{{'consumer-resources.social-security-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.text17' | translate}}
+            <span><a href="http://www.sba.gov/">{{'consumer-resources.united-states-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.text18' | translate}}
+            <span><a href="http://www.usdoj.gov/">{{'consumer-resources.department-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.text19' | translate}}
+            <span><a href="http://www.hhs.gov/">{{'consumer-resources.department-health-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.text20' | translate}}
+            <span><a href="http://www.hud.gov/">{{'consumer-resources.department-housing-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.text21' | translate}}
+            <span><a href="http://www.va.gov/">{{'consumer-resources.department-veterans-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.text22' | translate}}
+            <span><a href="http://www.sec.gov/">{{'consumer-resources.securities-exchange' | translate}}</a></span>
+          </p>
+
+        </div>
+      </mat-tab>
+      <mat-tab label="{{'consumer-resources.tab-label3' | translate}}">
+        <div class="example-small-box mat-elevation-z4">
+          <p>
+            <span><a href="http://www.naccra.com">{{'consumer-resources.tab3.naccra-link' | translate}}</a></span>
+            {{'consumer-resources.tab3.text1' | translate}}
+            <span><a href="http://www.aarp.org/">{{'consumer-resources.tab3.aarp-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.tab3.text2' | translate}}
+            <span><a href="http://www.sec.gov/">{{'consumer-resources.tab3.findlegalhelp-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.tab3.text3' | translate}}
+            <span><a href="http://www.sec.gov/">{{'consumer-resources.tab3.redcross-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.tab3.text4' | translate}}
+            <span><a href="http://www.sec.gov/">{{'consumer-resources.tab3.bankrate-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.tab3.text5' | translate}}
+            <span><a href="http://www.sec.gov/">{{'consumer-resources.tab3.bbb-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.tab3.text6' | translate}}
+            <span><a href="http://www.sec.gov/">{{'consumer-resources.tab3.carf-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.tab3.text7' | translate}}
+            <span><a href="http://www.sec.gov/">{{'consumer-resources.tab3.childcareaware-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.tab3.text8' | translate}}
+            <span><a
+                href="http://www.sec.gov/">{{'consumer-resources.tab3.consumer-action-link"' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.tab3.text9' | translate}}
+            <span><a
+                href="http://www.consumeraffairs.org/">{{'consumer-resources.tab3.consumeraffairs-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.tab3.text10' | translate}}
+            <span><a href="http://www.goodwill.org/">{{'consumer-resources.tab3.goodwill-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.tab3.text11' | translate}}
+            <span><a href="http://www.iii.org/">{{'consumer-resources.tab3.iii-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.tab3.text12' | translate}}
+            <span><a href="http://www.nasd.com/">{{'consumer-resources.tab3.nasd-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.tab3.text13' | translate}}
+            <span><a href="http://www.nccusl.org/">{{'consumer-resources.tab3.nccusl-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.tab3.text14' | translate}}
+            <span><a href="http://www.nclc.org/">{{'consumer-resources.tab3.nclc-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.tab3.text15' | translate}}
+            <span><a href="http://www.naccra.com">{{'consumer-resources.tab3.naccra' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.tab3.text16' | translate}}</p>
+
+          <p>{{'consumer-resources.tab3.text17' | translate}}
+            <span><a href="http://www.nncc.org/">{{'consumer-resources.tab3.nncc-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.tab3.OptOutPresecrren' | translate}}
+            <span><a
+                href="http://www.optoutprescreen.com/">{{'consumer-resources.tab3.optOutPresecrren-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.tab3.text18' | translate}}
+            <span><a
+                href="http://www.practicalmoneyskills.com/">{{'consumer-resources.tab3.practicalmoneyskills-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.tab3.text19' | translate}}
+            <span><a
+                href="http://www.reversemortgage.org/">{{'consumer-resources.tab3.reversemortgage-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.tab3.text20' | translate}}
+            <span><a
+                href="http://www.salvationarmy.org/">{{'consumer-resources.tab3.salvationarmy-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.tab3.text21' | translate}}
+            <span><a href="http://www.ibrinfo.org/">{{'consumer-resources.tab3.ibrinfo-link' | translate}}</a></span>
+          </p>
+          <p>{{'consumer-resources.tab3.text22' | translate}}
+            <span><a href="http://www.nolo.com/article.cfm">{{'consumer-resources.tab3.nolo-link' | translate}}</a>
+            </span>
+            <span>{{'consumer-resources.tab3.text23' | translate}}</span>
+          </p>
+          <p>{{'consumer-resources.tab3.text24' | translate}}</p>
+          <p>{{'consumer-resources.tab3.text25' | translate}}</p>
+
+          <ul *ngFor="let item of list">
+            <li>{{item.text | translate}}</li>
+          </ul>
+
+          <p>{{'consumer-resources.tab3.text26' | translate}}
+            <span><a
+                href="http://consumeraction.gov/state.shtml">{{'consumer-resources.tab3.consumeraction-link' | translate}}</a>
+            </span>
+          </p>
+        </div>
+      </mat-tab>
+      <mat-tab label="{{'consumer-resources.tab-label4' | translate}}">
+        <div class="example-small-box mat-elevation-z4">
+          <p>{{'consumer-resources.text23' | translate}}</p>
+          <p [innerHTML]="'consumer-resources.text24' | translate"></p>
+          <p [innerHTML]="'consumer-resources.text25' | translate"></p>
+          <p [innerHTML]="'consumer-resources.text26' | translate"></p>
+          <p [innerHTML]="'consumer-resources.text27' | translate"></p>
+          <p [innerHTML]="'consumer-resources.text28' | translate"></p>
+          <p [innerHTML]="'consumer-resources.text29' | translate"></p>
+          <p [innerHTML]="'consumer-resources.text30' | translate"></p>
+          <p [innerHTML]="'consumer-resources.text31' | translate"></p>
+          <p [innerHTML]="'consumer-resources.text32' | translate"></p>
+          <p [innerHTML]="'consumer-resources.text33' | translate"></p>
+          <p [innerHTML]="'consumer-resources.text34' | translate"></p>
+          <p [innerHTML]="'consumer-resources.text35' | translate"></p>
+          <p [innerHTML]="'consumer-resources.text36' | translate"></p>
+          <p [innerHTML]="'consumer-resources.text37' | translate"></p>
+          <p [innerHTML]="'consumer-resources.text38' | translate"></p>
+          <p [innerHTML]="'consumer-resources.text39' | translate"></p>
+          <p [innerHTML]="'consumer-resources.text40' | translate"></p>
+          <p [innerHTML]="'consumer-resources.text41' | translate"></p>
+          <p [innerHTML]="'consumer-resources.text42' | translate"></p>
+          <p [innerHTML]="'consumer-resources.text43' | translate"></p>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+.budgeting-faqs {
+  width: 1110px;
+  font-size: 17px;
+
+  .text {
+    margin: 0 0 10px;
+    font-weight: 400;
+  }
+}
+
+::ng-deep .mat-expansion-panel-header {
+  &:active {
+    background-color: #e4e4e480 !important;
+  }
+}
+.header {
+  font-size: 17px;
+}
+::ng-deep .header > .mat-expansion-indicator:after {
+  color: #0a9200;
+}
+.subtitle {
+  font-weight: bold;
+}
+.faqs-title {
+  margin: 30px 0px;
+}
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #ddd;
+  border-left: solid 20px #fff;
+}
+.faqs-text {
+  font-style: italic;
+  margin: 10px 0px;
+  font-size: 15px;
+  line-height: 24.5px;
+  color: rgb(102, 102, 102);
+}

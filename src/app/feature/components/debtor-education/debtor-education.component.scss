@@ -1,0 +1,49 @@
+.debtor-education {
+  font-size: 17px;
+
+  .text {
+    margin: 0 0 10px;
+  }
+}
+
+.page-title {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+img {
+  width: 400px;
+  height: 300px;
+  margin: 20px;
+  float: left;
+}
+
+.underline-text {
+  text-decoration: underline;
+}
+
+.yellow-text {
+  background-color: #ffff00;
+}
+
+.green-text {
+  background-color: #00ff00;
+}
+
+.red-text {
+  color: red;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  list-style: none;
+  font-size: 17px;
+}
+@media (max-width: 460px) {
+    img {
+      max-width: 300px;
+      max-height: 215px;
+    }
+  }

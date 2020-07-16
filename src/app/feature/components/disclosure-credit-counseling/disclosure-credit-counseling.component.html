@@ -1,0 +1,60 @@
+<app-main-header [title]="'disclosure-credit-counseling.title'"></app-main-header>
+
+<div class="container flex-row-center-initial-section">
+  <div class="disclosure-credit-counseling content">
+    <p class="page-title">{{'disclosure-credit-counseling.page-title' | translate}}</p>
+    <p class="disclosure-credit-text text" [innerHTML]="'disclosure-credit-counseling.text1' | translate"></p>
+    <p class="subtitle">{{'disclosure-credit-counseling.fee-schedule' | translate}}</p>
+    <p class="text">{{'disclosure-credit-counseling.text2' | translate}}</p>
+    <p class="text">{{'disclosure-credit-counseling.text3' | translate}}</p>
+    <p class="text">{{'disclosure-credit-counseling.text4' | translate}}</p>
+    <p class="subtitle">{{'disclosure-credit-counseling.ability-to-pay' | translate}}</p>
+    <p class="text">{{'disclosure-credit-counseling.text5' | translate}}</p>
+    <p class="text" [innerHTML]="'disclosure-credit-counseling.text6' | translate"></p>
+    <p class="text">{{'disclosure-credit-counseling.text7' | translate}}</p>
+    <p class="text" [innerHTML]="'disclosure-credit-counseling.text8' | translate"></p>
+    <p class="text">{{'disclosure-credit-counseling.text9' | translate}}</p>
+
+    <ul>
+      <li *ngFor="let item of infoSteps">{{item.text | translate}}</li>
+    </ul>
+
+    <p class="text">{{'disclosure-credit-counseling.text10' | translate}}</p>
+    <p class="text">{{'disclosure-credit-counseling.text11' | translate}}
+      <span>{{'disclosure-credit-counseling.email' | translate}}</span>
+      <span>{{'disclosure-credit-counseling.fax' | translate}}</span>
+    </p>
+    <p class="text">{{'disclosure-credit-counseling.text23' | translate}}</p>
+    <p class="text">{{'disclosure-credit-counseling.text24' | translate}}</p>
+
+    <ul>
+      <li *ngFor="let item of considerationInfo" [innerHTML]="item.text | translate"></li>
+    </ul>
+    <p class="text">{{'disclosure-credit-counseling.text12' | translate}}</p>
+    <p class="subtitle">{{'disclosure-credit-counseling.bilingual-counseling-services' | translate}}</p>
+    <p class="text">{{'disclosure-credit-counseling.text13' | translate}}</p>
+    <p class="subtitle">{{'disclosure-credit-counseling.agencys-funding-sources' | translate}}</p>
+    <p class="text">{{'disclosure-credit-counseling.text14' | translate}}</p>
+    <p class="subtitle">{{'disclosure-credit-counseling.counselor-qualifications' | translate}}</p>
+    <p class="text">{{'disclosure-credit-counseling.text15' | translate}}</p>
+    <p class="subtitle">{{'disclosure-credit-counseling.impact-on-credit-reports' | translate}}</p>
+    <p class="text">{{'disclosure-credit-counseling.text16' | translate}}</p>
+    <p class="subtitle">{{'disclosure-credit-counseling.consideration-for-referrals' | translate}}</p>
+    <p class="text">{{'disclosure-credit-counseling.text17' | translate}}</p>
+    <p class="subtitle">{{'disclosure-credit-counseling.certificate-of-counseling' | translate}}</p>
+    <p class="text">{{'disclosure-credit-counseling.text25' | translate}}</p>
+    <p class="subtitle">{{'disclosure-credit-counseling.opportunity-to-negotiate' | translate}}</p>
+    <p class="text">{{'disclosure-credit-counseling.disclosure-of-client-information' | translate}}</p>
+    <p class="text">{{'disclosure-credit-counseling.text19' | translate}}</p>
+    <p class="subtitle">{{'disclosure-credit-counseling.annual-review' | translate}}</p>
+    <p class="text">{{'disclosure-credit-counseling.text20' | translate}}</p>
+    <p class="subtitle">{{'disclosure-credit-counseling.receipt-of-certificate' | translate}}</p>
+    <p class="text">{{'disclosure-credit-counseling.text21' | translate}}</p>
+    <p class="text subtitle" [innerHTML]="'disclosure-credit-counseling.text22' | translate"></p>
+
+    <div class="buttons-block">
+        <button class="accept">{{'disclosure-credit-counseling.accept' | translate}}</button>
+        <button class="decline" routerLink="" routerLinkActive="active" >{{'disclosure-credit-counseling.decline' | translate}}</button>
+    </div>
+  </div>
+</div>

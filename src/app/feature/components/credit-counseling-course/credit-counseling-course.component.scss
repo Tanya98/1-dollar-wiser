@@ -1,0 +1,26 @@
+.credit-counseling-course {
+  font-size: 16px;
+
+  .text {
+    margin: 0 0 10px;
+  }
+}
+
+.table {
+  .item {
+    width: 100%;
+    background: #eee;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    p {
+      margin: 0;
+    }
+  }
+  .name {
+    padding-left: 60px;
+  }
+
+  .brown-text {
+    color: #8b4513;
+  }
+}

@@ -1,17 +1,19 @@
 <div class="menu">
   <div class="flex-row-wrap-section">
-    <div routerLink="content/budget-credit-counseling" routerLinkActive="active">
-        <button  class="text" 
-         [matMenuTriggerFor]="programsServices"
-        #programsServicesMenuTrigger="matMenuTrigger" (mouseenter)="programsServicesMenuTrigger.openMenu()">
+    <div>
+      <button class="text" [matMenuTriggerFor]="programsServices" #programsServicesMenuTrigger="matMenuTrigger"
+        (mouseenter)="programsServicesMenuTrigger.openMenu()">
         {{'menu.programs-services' | translate}}
-      </button></div>
-    <div><button class="text" routerLink="consumer-debt-information" routerLinkActive="active"
-        [matMenuTriggerFor]="recources" #recourcesMenuTrigger="matMenuTrigger"
+      </button>
+    </div>
+    <div><button class="text" [matMenuTriggerFor]="recources" #recourcesMenuTrigger="matMenuTrigger"
         (mouseenter)="recourcesMenuTrigger.openMenu()">{{'menu.recources' | translate}}</button></div>
   </div>
   <mat-menu #programsServices="matMenu" class="drop-down-menu" [overlapTrigger]="false">
     <span>
+      <button mat-menu-item routerLink="content/budget-credit-counseling" routerLinkActive="active">
+        {{'menu.programs-services' | translate}}
+      </button>
       <button mat-menu-item routerLink="content/budget-credit-counseling" routerLinkActive="active"
         [matMenuTriggerFor]="budgetCredit" #budgetCreditMenuTrigger="matMenuTrigger"
         (mouseenter)="budgetCreditMenuTrigger.openMenu()">
@@ -59,6 +61,7 @@
 
   <mat-menu #recources="matMenu" class="drop-down-menu">
     <span (mouseleave)="recourcesMenuTrigger.closeMenu()">
+      <button routerLink="consumer-debt-information" routerLinkActive="active">{{'menu.recources' | translate}}</button>
       <button [innerHTML]="'menu.consumer-recources' | translate" routerLink="consumer-resources"
         routerLinkActive="active"></button>
       <button [innerHTML]="'menu.credit-laws' | translate" routerLink="credit-laws-summaries"

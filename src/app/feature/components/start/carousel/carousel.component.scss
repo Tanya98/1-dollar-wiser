@@ -31,7 +31,6 @@ h2 {
 
 .carousel-caption {
   position: absolute;
-  z-index: 999999999;
 }
 
 .picsum-img-wrapper {
@@ -52,9 +51,9 @@ h2 {
   .carousel-control-prev {
     z-index: 99999999 !important;
   }
-  //   .carousel-indicators {
-  //     z-index: 99999999 !important;
-  //   }
+  .picsum-img-wrapper {
+    z-index: 2;
+  }
 }
 
 @media (max-width: 1414px) {
@@ -73,16 +72,16 @@ h2 {
 }
 
 @media (max-width: 1000px) {
-    .carousel-caption {
-      top: 30px;
-      h2 {
-        font-size: 28px;
-      }
-      p {
-        font-size: 20px;
-      }
+  .carousel-caption {
+    top: 30px;
+    h2 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 20px;
     }
   }
+}
 
 @media (max-width: 767px) {
   .carousel {

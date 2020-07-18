@@ -38,17 +38,17 @@ a {
   border-radius: 2px;
   li {
     list-style: none;
-    font-size: 13px;
-    font-weight: 600;
-    padding: 7px 15px;
-    transition: all 0.4s;
-    border: 0;
-    &:hover {
-      background-color: #389e38;
-      cursor: pointer;
-      color: white;
-      border: 0;
-    }
+//     font-size: 13px;
+//     font-weight: 600;
+//     padding: 7px 15px;
+//     transition: all 0.4s;
+//     border: 0;
+//     &:hover {
+//       background-color: #389e38;
+//       cursor: pointer;
+//       color: white;
+//       border: 0;
+//     }
   }
 }
 
@@ -65,7 +65,8 @@ a {
 button {
   background-color: white;
   padding: 3px 25px 3px 8px;
-  font-size: 13px;
+  font-weight: 700;
+  font-size: 17px;
   width: 100%;
   border: 0;
   text-align: left;
@@ -73,9 +74,32 @@ button {
     outline: none;
   }
   &:hover {
-    background-color: #389e38 !important;
+    // background-color: none !important;
     cursor: pointer;
-    color: white;
     border: 0;
+  }
+}
+
+::ng-deep {
+  .mat-menu-item {
+    list-style: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 7px 15px;
+    transition: all 0.4s;
+    border: 0;
+    word-break: break-word !important;
+    &:hover {
+      background-color: #389e38 !important;
+      cursor: pointer;
+      color: white;
+      border: 0;
+    }
+  }
+
+  mat-button {
+    &:hover {
+      background-color: transparent !important;
+    }
   }
 }

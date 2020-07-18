@@ -2,12 +2,11 @@
   <div class="menu-block">
     <div class="img-block"><img src="assets/images/logo.png" class="logo" routerLink="" routerLinkActive="active"></div>
     <nav class="menu">
-      <app-menu></app-menu>
+      <app-menu class="flex-row-wrap-section"></app-menu>
     </nav>
     <div class="block-buttons">
       <div><span class="phone-number">{{'header.phone-number' | translate}}</span></div>
       <div>
-        <button class="registration-help-btn" routerLink="registration-help" routerLinkActive="active">{{'header.registration-button' | translate}}</button>
         <button class="login-btn" (click)="login()">{{'header.login-button' | translate}}</button>
     </div>
     </div>

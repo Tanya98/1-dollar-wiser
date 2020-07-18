@@ -12,12 +12,10 @@ export class StartPageComponent implements OnInit {
     public budgetCreditItems: Object[] = [
         { item: "card.budget-credit-first-item" },
         { item: "card.budget-credit-second-item" },
-        { item: "card.bidget-credit-third-item" },
     ];
     public debtorEducationItems: Object[] = [
         { item: "card.debtor-education-first-item" },
-        { item: "card.debtor-education-second-item" },
-        { item: "card.debtor-education-third-item" },
+        { item: "card.debtor-education-second-item" }
     ];
 
     constructor(private translate: TranslateService) { }

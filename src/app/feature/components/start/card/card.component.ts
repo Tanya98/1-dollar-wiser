@@ -1,6 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { RedirectService } from 'src/app/core/services/redirect.service';
+import { EventEmitter } from 'protractor';
 
 @Component({
     selector: 'app-card',
@@ -17,8 +18,4 @@ export class CardComponent implements OnInit {
     constructor(private translate: TranslateService, private service: RedirectService) { }
 
     ngOnInit() { }
-
-    public register() {
-        this.service.loginNow();
-    }
 }

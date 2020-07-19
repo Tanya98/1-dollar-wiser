@@ -14,7 +14,6 @@ export class BudgetCreditCounselingFaqsComponent implements OnInit {
         { text: "budget-credit-counseling-faqs.item4" },
         { text: "budget-credit-counseling-faqs.item5" },
         { text: "budget-credit-counseling-faqs.item6" },
-        { text: "budget-credit-counseling-faqs.item7" },
         { text: "budget-credit-counseling-faqs.item8" },
         { text: "budget-credit-counseling-faqs.item9" }
     ];

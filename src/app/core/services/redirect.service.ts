@@ -10,4 +10,12 @@ export class RedirectService {
     public loginNow(): void {
         window.open(this.url + 'Account/AttorneyRegistration.aspx');
     }
+
+    public goToFirstCourse(): void {
+        window.open(this.url + 'Account/Disclosures.aspx?type=1');
+    }
+
+    public goToSecondCourse(): void {
+        window.open(this.url + 'Account/Disclosures.aspx?type=2');
+    }
 }

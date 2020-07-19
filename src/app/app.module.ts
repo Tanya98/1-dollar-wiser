@@ -12,7 +12,6 @@ import { StartPageComponent } from './feature/components/start/start-page.compon
 import { NgbdCarouselBasicModule } from './feature/components/start/carousel/carousel.module';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { CardComponent } from './feature/components/start/card/card.component';
-import { RegistrationHelpModule } from './feature/components/registration-help/registration-help.module';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -51,7 +50,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     HttpClientModule,
     SharedModule,
     NgbdCarouselBasicModule,
-    RegistrationHelpModule
   ],
   providers: [],
   exports: [RouterModule],

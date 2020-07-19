@@ -22,7 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
         HeaderComponent,
         MenuComponent,
         MainHeaderComponent,
-        ContactFormComponent
+        ContactFormComponent,
+        TranslateModule
     ],
     declarations: [
        HeaderComponent,

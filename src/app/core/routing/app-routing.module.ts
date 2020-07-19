@@ -7,10 +7,7 @@ const routes: Routes = [
         path: '',
         component: StartPageComponent
     },
-    {
-        path: 'registration-help',
-        loadChildren: () => import('../../feature/components/registration-help/registration-help.module').then(m => m.RegistrationHelpModule),
-    },
+    
     {
         path: 'content/privacy-policy',
         loadChildren: () => import('../../feature/components/privacy-policy/privacy-policy.module').then(m => m.PrivacyPolicyModule)
@@ -46,10 +43,6 @@ const routes: Routes = [
     {
         path: 'budget-and-credit-counseling-disclosure',
         loadChildren: () => import('../../feature/components/disclosure-credit-counseling/disclosure-credit-counseling.module').then(m => m.DisclosureCreditCounselingModule)
-    },
-    {
-        path: 'content/fee-schedule',
-        loadChildren: () => import('../../feature/components/fee-schedule/fee-schedule.module').then(m => m.FeeScheduleModule)
     },
     {
         path: 'content/contact-counselor',
@@ -98,10 +91,6 @@ const routes: Routes = [
     {
         path: 'content/contact-counselor-debtor-education',
         loadChildren: () => import('../../feature/components/contact-counselor-debtor-education/contact-counselor-debtor-education.module').then(m => m.ContactCounselorDebtorEducationModule)
-    },
-    {
-        path: 'content/1-wiser-consumer-education-fee-schedule',
-        loadChildren: () => import('../../feature/components/consumer-education-fee-schedule/consumer-education-fee-schedule.module').then(m => m.ConsumerEducationFeeScheduleModule)
     },
     {
         path: 'budgeting-faqs',

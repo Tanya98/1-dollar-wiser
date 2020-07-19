@@ -1,28 +1,18 @@
 <ngbd-carousel-basic></ngbd-carousel-basic>
 <div class="text-section flex-column-center-section">
   <div class="info-block container flex-column-center-section">
-    <h2 [innerHTML]="'payment-section.money-managment-toolkit' | translate"></h2>
-    <div>
-      <button class="donate-btn"><a
-          href="https://www.paypal.com/donate/?token=VjiEa0IeWv4qy7OOiBr5BJ5g1kg8JtAIBuaRoA0PEuRdtxT14HaKrREl9yQCP5Pe7jAYiG&country.x=US&locale.x=US"
-          target="_blank">
-          {{'payment-section.donate-button' | translate}}</a></button>
-    </div>
-    <div class="payment-section">
-      <img src="assets/images/cards.png">
-    </div>
-    <a (click)="open()">
-      <h2 class="title-disaster" [innerHTML]="'payment-section.disaster-survivors' | translate"></h2>
-    </a>
     <span class="text" [innerHTML]="'payment-section.description' | translate"></span>
     <div class="flex-row-center-section wrap">
       <app-card [cardHeaderTitle]="'card.budget-credit-title' | translate"
         [cardHeaderText]="'card.budget-credit-text' | translate"
-        [cardPriceTitle]="'card.budget-credit-price-title' | translate" [cardItems]="budgetCreditItems">
+        [cardPriceTitle]="'card.budget-credit-price-title' | translate" 
+        [cardItems]="budgetCreditItems">
       </app-card>
       <app-card class="second-card" [cardHeaderTitle]="'card.debtor-education-title' | translate"
         [cardHeaderText]="'card.debtor-education-text' | translate"
-        [cardPriceTitle]="'card.debtor-education-price-title' | translate" [cardItems]="debtorEducationItems">
+        [cardPriceTitle]="'card.debtor-education-price-title' | translate" 
+        [cardItems]="debtorEducationItems"
+        >
       </app-card>
     </div>
     <span class="wiser-education-text" [innerHTML]="'payment-section.wiser-education' | translate"> </span>

@@ -13,4 +13,12 @@ export class NgbdCarouselBasic {
     public register() {
         this.service.loginNow();
     }
+
+    public goToFirstCourse() {
+        this.service.goToFirstCourse();
+    }
+
+    public goToSecondCourse() {
+        this.service.goToSecondCourse();
+    }
 }

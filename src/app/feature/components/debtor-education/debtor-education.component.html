@@ -13,22 +13,18 @@
     <p class="underline-text">{{'debtor-education.what-you-need' | translate}}</p>
     <p class="text">{{'debtor-education.text4' | translate}}</p>
 
-    <ul *ngFor="let item of infoBeforeCourses">
-      <li>{{item.text | translate}}</li>
+    <ul>
+      <li *ngFor="let item of infoBeforeCourses">{{item.text | translate}}</li>
     </ul>
     <p class="underline-text">{{'debtor-education.how-much-cost' | translate}}</p>
-    <p class="text">{{'debtor-education.text5' | translate}}
-      <span class="yellow-text">{{'debtor-education.per-person' | translate}}</span>
-      <span>{{'debtor-education.text6' | translate}}</span>
-      <span class="red-text">{{'debtor-education.non-refundable' | translate}}</span>
-    </p>
+    <p class="text">{{'debtor-education.text5' | translate}} </p>
     <p class="underline-text">{{'debtor-education.how-long-take' | translate}}</p>
     <p class="text">{{'debtor-education.text7' | translate}}</p>
     <p class="underline-text">{{'debtor-education.how-it-work' | translate}}</p>
     <p class="text">{{'debtor-education.text8' | translate}}</p>
 
-    <ul *ngFor="let item of processInfo">
-      <li>{{item.text | translate}}</li>
+    <ul>
+      <li *ngFor="let item of processInfo">{{item.text | translate}}</li>
     </ul>
   </div>
 </div>

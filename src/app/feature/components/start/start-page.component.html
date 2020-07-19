@@ -5,11 +5,14 @@
     <div class="flex-row-center-section wrap">
       <app-card [cardHeaderTitle]="'card.budget-credit-title' | translate"
         [cardHeaderText]="'card.budget-credit-text' | translate"
-        [cardPriceTitle]="'card.budget-credit-price-title' | translate" [cardItems]="budgetCreditItems">
+        [cardPriceTitle]="'card.budget-credit-price-title' | translate" 
+        [cardItems]="budgetCreditItems">
       </app-card>
       <app-card class="second-card" [cardHeaderTitle]="'card.debtor-education-title' | translate"
         [cardHeaderText]="'card.debtor-education-text' | translate"
-        [cardPriceTitle]="'card.debtor-education-price-title' | translate" [cardItems]="debtorEducationItems">
+        [cardPriceTitle]="'card.debtor-education-price-title' | translate" 
+        [cardItems]="debtorEducationItems"
+        >
       </app-card>
     </div>
     <span class="wiser-education-text" [innerHTML]="'payment-section.wiser-education' | translate"> </span>

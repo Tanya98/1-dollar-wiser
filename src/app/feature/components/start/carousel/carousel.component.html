@@ -7,7 +7,7 @@
     <div class="carousel-caption">
       <h2>{{'carousel.first-slide-title' | translate}}</h2>
       <p [innerHTML]="'carousel.first-slide-description' | translate"></p>
-      <button class="register-btn"><a>{{'carousel.register-btn' | translate}}</a></button>
+      <button class="register-btn" (click)="goToFirstCourse()"><a>{{'carousel.register-btn' | translate}}</a></button>
     </div>
   </ng-template>
   <ng-template ngbSlide>
@@ -18,7 +18,7 @@
     <div class="carousel-caption">
       <h2>{{'carousel.second-slide-title' | translate}}</h2>
       <p [innerHTML]="'carousel.second-slide-description' | translate"></p>
-      <button class="register-btn" (click)="register()"><a>{{'carousel.register-btn' | translate}}</a></button>
+      <button class="register-btn" (click)="goToSecondCourse()"><a>{{'carousel.register-btn' | translate}}</a></button>
     </div>
   </ng-template>
 </ngb-carousel>

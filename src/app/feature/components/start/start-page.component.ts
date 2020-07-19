@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { RedirectService } from 'src/app/core/services/redirect.service';
 
 @Component({
     selector: 'app-start-page',
@@ -18,7 +19,7 @@ export class StartPageComponent implements OnInit {
         { item: "card.debtor-education-second-item" }
     ];
 
-    constructor(private translate: TranslateService) { }
+    constructor(private translate: TranslateService, private service: RedirectService) { }
 
     ngOnInit() { }
 
